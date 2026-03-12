@@ -17,7 +17,7 @@ const HeroPage = () => {
   // Next section fades in and slides up
   const contentOpacity = useTransform(scrollY, [150, 300], [0.1, 1]);
   const aboutOpacity = useTransform(scrollY, [400, 600], [0.1, 1]);
-  const projectOpacity = useTransform(scrollY, [1000, 1200], [0.1, 1]);
+  const projectOpacity = useTransform(scrollY, [1500, 1800], [0.1, 1]);
 //   const contentTranslateY = useTransform(scrollY, [100, 300], [50, 0]);
 //   const contentBg = useTransform(scrollY, [0, 100], ["fixed", "scroll"])
 
@@ -40,7 +40,7 @@ const HeroPage = () => {
           style={{ y: heroTranslateY, opacity: heroOpacity }}
         >
           <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold drop-shadow-lg">
-            Festus Phillip O.
+            Festus Phillip A.
           </h1>
           <p className="text-white text-lg md:text-2xl drop-shadow-md mt-2">
             Software Developer & Graphics Designer
