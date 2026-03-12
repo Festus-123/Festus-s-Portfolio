@@ -4,6 +4,7 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import About_Preview from "../about-preview/About_Preview";
+import Project_Preview from "../project-preview/Project_Preview";
 
 const HeroPage = () => {
   // New scroll hook
@@ -15,8 +16,9 @@ const HeroPage = () => {
 
   // Next section fades in and slides up
   const contentOpacity = useTransform(scrollY, [150, 300], [0.1, 1]);
-  const aboutOpacity = useTransform(scrollY, [400, 600], [0.1, 1])
-  const contentTranslateY = useTransform(scrollY, [100, 300], [50, 0]);
+  const aboutOpacity = useTransform(scrollY, [400, 600], [0.1, 1]);
+  const projectOpacity = useTransform(scrollY, [1000, 1200], [0.1, 1]);
+//   const contentTranslateY = useTransform(scrollY, [100, 300], [50, 0]);
 //   const contentBg = useTransform(scrollY, [0, 100], ["fixed", "scroll"])
 
   return (
@@ -66,10 +68,18 @@ const HeroPage = () => {
       {/* Abotu Preview */}
       <motion.div
       style={{ opacity: aboutOpacity}}
-        className="relative mt-25"
+        className="relative mt-40"
         >
         <About_Preview />
       </motion.div>
+
+      {/* Project preview */}
+      <motion.div
+        style={{ opacity: projectOpacity }}
+        className="relative mt-40">
+         <Project_Preview />
+      </motion.div>
+
       </motion.section>
 
     </div>
