@@ -6,6 +6,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import About_Preview from "../about-preview/About_Preview";
 import Project_Preview from "../project-preview/Project_Preview";
+import Contact_Preview from "../contact-preview/Contact_Preview";
+import Footer from "../footer/Footer";
 
 const HeroPage = () => {
   // New scroll hook
@@ -17,8 +19,6 @@ const HeroPage = () => {
 
   // Next section fades in and slides up
   const contentOpacity = useTransform(scrollY, [150, 300], [0.1, 1]);
-//   const aboutOpacity = useTransform(scrollY, [400, 600], [0.1, 1]);
-//   const projectOpacity = useTransform(scrollY, [1500, 1800], [0.1, 1]);
     const contentTranslateY = useTransform(scrollY, [600, 800], [-50, -320]);
     const raceHello = useTransform(scrollY, [400, 800], [-60, 50])
 
@@ -43,8 +43,8 @@ const HeroPage = () => {
           <h1 className="text-white fon-changa text-4xl md:text-6xl lg:text-7xl font-bold drop-shadow-lg">
             Festus Phillip A.
           </h1>
-          <p className="text-white text-lg md:text-2xl drop-shadow-md mt-2">
-            Software Developer & Graphics Designer
+          <p className="text-white text-lg md:text-2xl drop-shadow-lg mt-2">
+            Full Stack ~ Mobile App ~ Graphics ~ Web 3 designer
           </p>
         </motion.div>
       </motion.section>
@@ -62,23 +62,20 @@ const HeroPage = () => {
 
         <div className="relative p-8 w-full mt-5 ">
           <motion.h2
-            className="text-3xl md:text-5xl lg:text-7xl text-justify font-changa  font-extrabold leading-none md:leading-none text-amber-950 flex flex-wrap"
+            className="text-2xl sm:text-5xl md:text-6xl lg:text-8xl text- font-changa font-extrabold leading-none md:leading-none text-amber-950 flex flex-wrap"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
-            SOFTWARE DEVELOPER & <br /> GRAPHICS DESIGNER
+            SOFTWARE DEVELOPER <br /> &  GRAPHICS DESIGNER
           </motion.h2>
         </div>
 
         {/* Abotu Preview */}
         <motion.div style={{y: contentTranslateY}} className="relative mt-40">
             <motion.div
-                initial={{ x: "50%"}}
-                animate={{ x: "0"}}
-                transition={{ duration: 1}}
                 style={{y: raceHello}}
-                className=" p-4 text-2xl md:text-6xl text-gray-200 font-bold drop-shadow-lg ">
+                className=" p-4 text-3xl md:text-6xl text-gray-200 font-bold drop-shadow-lg ">
                 👋{''}🏃‍♀️...
             </motion.div>
           <About_Preview />
@@ -91,6 +88,26 @@ const HeroPage = () => {
         >
           <Project_Preview />
         </motion.div>
+
+        {/* We should work together */}
+        <motion.div
+          // style={{ y: contnetDescribeTranslateY }}
+          className="p-4 md:p-8">
+          <motion.h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-950 text-center leading-relaxed">
+            WANT TO BUILD A USER FRIENDLY WEBSITE LET&apos;S BUILD TOGEHTER!!!
+          </motion.h1>
+        </motion.div>
+
+        {/* Contact section */}
+        <motion.div 
+          className="mt-40 ">
+          <Contact_Preview />
+        </motion.div>
+
+        {/* Footer */}
+        <div className="">
+          <Footer />
+        </div>
       </motion.section>
     </div>
   );
