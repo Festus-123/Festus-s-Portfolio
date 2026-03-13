@@ -19,7 +19,7 @@ const Contact_Preview = () => {
               placeholder="your-email@gmail.com"
               required
               type="email"
-              className="font-light"
+              className="font-light outline-none border-none"
             />
           </div>
           {/* Name field */}
@@ -29,7 +29,7 @@ const Contact_Preview = () => {
               id="Email"
               placeholder="your name"
               type="Text"
-              className="font-light"
+              className="font-light outline-none border-none"
             />
           </div>
           {/* Description field */}
@@ -39,7 +39,7 @@ const Contact_Preview = () => {
               id="Email"
               placeholder="Build..."
               required
-              className="font-light min-h-25 max:h-25 md:min-h-30 md:max-h-30"
+              className="font-light min-h-25 max:h-25 md:min-h-30 md:max-h-30 outline-none border-none"
             />
           </div>
           <button 
