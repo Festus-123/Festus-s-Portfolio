@@ -60,9 +60,9 @@ const HeroPage = () => {
       >
         <div className="absolute top-0 left-0 w-full h-full bg-black/5"></div>
 
-        <div className="relative p-8 w-full mt-10 ">
+        <div className="relative p-8 w-full mt-5 ">
           <motion.h2
-            className="text-4xl md:text-5xl lg:text-7xl text-justify font-changa  font-extrabold leading-none md:leading-none text-amber-950 flex flex-wrap"
+            className="text-3xl md:text-5xl lg:text-7xl text-justify font-changa  font-extrabold leading-none md:leading-none text-amber-950 flex flex-wrap"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}

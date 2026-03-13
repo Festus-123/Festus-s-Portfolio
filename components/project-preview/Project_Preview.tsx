@@ -6,8 +6,15 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Project_container from "../project-container/Project_container";
 import { motion, useTransform, useScroll } from "framer-motion";
 
+
 const Project_Preview = () => {
   const { scrollY } = useScroll();
+
+  const links = [
+    {name: "Tax Master", image: "/project-1.png", site: "", github: "/github.jpg"},
+    {name: "M & K Clothing", image: "/project-1.png", site: "", github: "/github.jpg"},
+    {name: "Collecta NFT", image: "/project-1.png", site: "", github: "/github.jpg"},
+  ]
 
   //   const projectNextOpacity = useTransform(scrollY, [800, 1000], [0.1, 1]);
   const projectTranslateY = useTransform(scrollY, [400, 800], [100, -50]);
@@ -22,53 +29,34 @@ const Project_Preview = () => {
       </motion.h1>
 
       <motion.div
-        className="bg-black/90 w-full flex flex-col gap-20 items-center z-20"
+        className="bg-black/90 flex flex-col items-end p-8 "
         style={{ y: projectOverTitle }}
       >
-        {/* Projects */}
-        <Project_container
-          project_no="PROJECT #1"
-          project_stacks={[
-            "React 19",
-            "Tailwind css",
-            "Framer motion",
-            "supabase",
-            "Typescript",
-          ]}
-          project_title="Tax Master"
-          project_cause="Calculate and Estimate your taxes under the Nigerian 2026 tax
-            regulation."
-          project_description="Tax master Helps users in classes of: Individuals, (employed, self
-            employed), Business owners (large or small foirms), or Others
-            whatever categor they fall in Calculate their taxes to keep ccurate
-            track and avoid penalties of the 2026 tax regulations"
-        />
-
-        {/* Projects */}
-        <motion.div style={{}}>
-          <Project_container
-            project_no="PROJECT #2"
-            project_stacks={[
-              "React 19",
-              "Tailwind css",
-              "Framer motion",
-              "supabase",
-              "Figma",
-              "javascript",
-              "sonner",
-            ]}
-            project_title="M & K Clothing"
-            project_cause="Calculate and Estimate your taxes under the Nigerian 2026 tax
-            regulation."
-            project_description="Tax master Helps users in classes of: Individuals, (employed, self
-            employed), Business owners (large or small foirms), or Others
-            whatever categor they fall in Calculate their taxes to keep ccurate
-            track and avoid penalties of the 2026 tax regulations"
-          />
-        </motion.div>
-
+        <h1 className="w-full font-bold text-2xl md:text-4xl text-white/90 text-center py-4 md:py-0">Recents Works</h1>
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 z-20 md:p-16">
+        { links.map((item, index) => (
+            <div
+                key={index}
+                className="flex flex-col gap-4 items-center text-white">
+                    <div className="border-3 border-white/90 p-4">
+                    <img src={item.image} alt={item.image}/>
+                    </div>
+                    <div className="w-full flex flex-row items-center justify-between border-b pb-2">
+                        <h1 className="font-bold text-lg md:text-xl">{item.name}</h1>
+                        <div className="font-bold text-xl md:text-2xl flex flex-row items-center gap-2">
+                            <Link href={item.site}>
+                                <FiArrowUpRight />
+                            </Link>
+                            <Link href={item.github}>
+                                <img className="w-5 h-5 rounded-full" src={item.github} alt="GitHub"/>
+                            </Link>
+                        </div>
+                    </div>
+            </div>
+        ))}
+        </div>
         <Link
-          className="w-full text-white/90 font-bold flex items-center justify-end gap-2 text-xl md:text-3xl cursor-pointer p-4"
+          className=" text-white/90 font-bold flex items-center gap-2 text-xl md:text-3xl cursor-pointer p-4"
           href="/about"
         >
           <span>More On Projects</span>
