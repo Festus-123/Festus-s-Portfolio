@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        changa: ["var(--font-changa-one)"],
+        heading: ["var(--font-changa-one)"],
       },
     },
   },

@@ -4,3 +4,8 @@
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.font-style {
+    font-family: var(--font-poppins);
+    font-weight: 900;
+}

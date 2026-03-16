@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Changa_One } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Changa_One,
+  Poppins,
+  Montserrat,
+  Oswald
+} from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/sidebar/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +23,19 @@ const geistMono = Geist_Mono({
 const changaOne = Changa_One({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-Changa-one",
+  variable: "--font-changa-one",
+});
+
+const poppins = Poppins({
+  weight: ["400", "600", "700"], // normal, semi-bold, bold
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
+
+const oswald = Oswald({
+  weight: ["400", "600", "700"], // normal, semi-bold, bold
+  subsets: ["latin"],
+  variable: "--font-oswald",
 });
 
 export const metadata: Metadata = {
@@ -31,8 +51,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${changaOne.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${changaOne.variable} ${poppins.variable} ${oswald.variable} antialiased relative`}
       >
+        <Sidebar />
         {children}
       </body>
     </html>

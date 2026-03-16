@@ -44,7 +44,7 @@ const HeroPage = () => {
             Festus Phillip A.
           </h1>
           <p className="text-white text-lg md:text-2xl drop-shadow-lg mt-2">
-            Full Stack ~ Mobile App ~ Graphics ~ Web 3 designer
+            Problem ~ Program ~ Solution
           </p>
         </motion.div>
       </motion.section>
@@ -62,7 +62,7 @@ const HeroPage = () => {
 
         <div className="relative p-8 w-full mt-5 ">
           <motion.h2
-            className="text-2xl sm:text-5xl md:text-6xl lg:text-8xl text- font-changa font-extrabold leading-none md:leading-none text-amber-950 flex flex-wrap"
+            className="text-2xl sm:text-5xl md:text-6xl lg:text-8xl font- leading-none md:leading-none text-amber-950 font-style"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -94,7 +94,8 @@ const HeroPage = () => {
           // style={{ y: contnetDescribeTranslateY }}
           className="p-4 md:p-8">
           <motion.h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-950 text-center leading-relaxed">
-            WANT TO BUILD A USER FRIENDLY WEBSITE LET&apos;S BUILD TOGEHTER!!!
+            {/* WANT TO BUILD A USER FRIENDLY WEBSITE LET&apos;S BUILD TOGEHTER!!! */}
+            WANT A CREATIVE DESIGN OR BUILD A USER FRIENDLY WEBSITE 👇👇
           </motion.h1>
         </motion.div>
 
