@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 
-import Project_container from "../project-container/Project_container";
+// import Project_container from "../project-container/Project_container";
 import { motion, useTransform, useScroll } from "framer-motion";
 
 
@@ -11,8 +11,8 @@ const Project_Preview = () => {
   const { scrollY } = useScroll();
 
   const links = [
-    {name: "Tax Master", image: "/project-1.png", site: "", github: "/github.jpg"},
-    {name: "M & K Clothing", image: "/project-1.png", site: "", github: "/github.jpg"},
+    {name: "Tax Master", video: "/tax-master.mp4", site: "https://tax-master.vercel.app/", github_site: "https://github.com/Festus-123/Tax-Master",  github: "/github.jpg"},
+    {name: "M & K Clothing", video: "/mk-clothing.mp4", site: "https://mkclothing-kna2.vercel.app/", github_site: "https://github.com/Festus-123/mkclothing",  github: "/github.jpg"},
     // {name: "Collecta NFT", image: "/project-1.png", site: "", github: "/github.jpg"},
   ]
 
@@ -40,7 +40,7 @@ const Project_Preview = () => {
                 key={index}
                 className="flex flex-col gap-4 items-center">
                     <div className="w-full">
-                    <img src={item.image} alt={item.image}/>
+                      <video src={item.video}></video>
                     </div>
                     <div className="w-full flex flex-row items-center justify-between border-b pb-2">
                         <h1 className="font-bold text-lg md:text-xl">{item.name}</h1>
@@ -48,7 +48,7 @@ const Project_Preview = () => {
                             <Link href={item.site}>
                                 <FiArrowUpRight />
                             </Link>
-                            <Link href={item.github}>
+                            <Link href={item.github_site}>
                                 <img className="w-5 h-5 rounded-full" src={item.github} alt="GitHub"/>
                             </Link>
                         </div>

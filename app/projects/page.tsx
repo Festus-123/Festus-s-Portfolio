@@ -10,40 +10,55 @@ const Projects = () => {
   const links = [
     {
       name: "Tax Master",
-      image: "/project-1.png",
-      site: "",
+      video: "/tax-master.mp4",
+      site: "https://tax-master.vercel.app/",
+      github_site: "https://github.com/Festus-123/Tax-Master",
       github: "/github.jpg",
     },
     {
       name: "M & K Clothing",
-      image: "/project-1.png",
-      site: "",
+      video: "/mk-clothing.mp4",
+      site: "https://mkclothing-kna2.vercel.app/",
+      github_site: "https://github.com/Festus-123/mkclothing",
       github: "/github.jpg",
     },
     {
       name: "Password Gen...",
-      image: "/project-1.png",
+      video: "/password-gen.mp4",
       site: "",
       github: "/github.jpg",
     },
     {
       name: "Movie App Main",
-      image: "/project-1.png",
+      video: "/movie-app.mp4",
       site: "",
       github: "/github.jpg",
     },
     {
       name: "Collecta NFT",
-      image: "/project-1.png",
+      video: "/collecta-nft.mp4",
       site: "",
       github: "/github.jpg",
     },
     {
       name: "Virtual Robot",
-      image: "/project-1.png",
+      video: "/virtual-robot.mp4",
       site: "",
       github: "/github.jpg",
     },
+    {
+      name: "Ciera-Fi",
+      video: "/ciera-fi.mp4",
+      site: "",
+      github: "/github.jpg",
+    },
+    {
+      name: "Movie Seaarch",
+      video: "/movie-search.mp4",
+      site: "",
+      github: "/github.jpg",
+    },
+``
   ];
   return (
     <div
@@ -65,7 +80,7 @@ const Projects = () => {
           {links.map((item, index) => (
             <div key={index} className="flex flex-col gap-4 items-center">
               <div className="w-full">
-                <img src={item.image} alt={item.image} />
+                <video src={item.video} />
               </div>
               <div className="w-full flex flex-row items-center justify-between border-b pb-2">
                 <h1 className="font-bold text-lg md:text-xl">{item.name}</h1>
