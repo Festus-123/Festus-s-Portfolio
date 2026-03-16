@@ -2,7 +2,9 @@ import React from 'react'
 import Hero_page from '@/components/hero/Hero_page'
 // import Sidebar from '@/components/sidebar/Sidebar'
 
-const Portfolio = () => {
+const Portfolio = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
   return (
     <div className=''>
       <Hero_page />
