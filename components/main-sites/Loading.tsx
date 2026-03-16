@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-const dot = {
+const dot: Variants = {
   animate: {
     y: [0, -12, 0],
     transition: {
@@ -26,21 +26,21 @@ export default function Loading() {
         <motion.span
           variants={dot}
           animate="animate"
-          className="w-3 h-3 bg-white rounded-full"
+          className="w-4 h-4 bg-white rounded-full"
         />
 
         <motion.span
           variants={dot}
           animate="animate"
           transition={{ delay: 0.2 }}
-          className="w-3 h-3 bg-white rounded-full"
+          className="w-4 h-4 bg-white rounded-full"
         />
 
         <motion.span
           variants={dot}
           animate="animate"
           transition={{ delay: 0.4 }}
-          className="w-3 h-3 bg-white rounded-full"
+          className="w-4 h-4 bg-white rounded-full"
         />
       </div>
     </motion.div>
