@@ -40,7 +40,12 @@ const Project_Preview = () => {
                 key={index}
                 className="flex flex-col gap-4 items-center">
                     <div className="w-full">
-                      <video src={item.video}></video>
+                      <video 
+                        muted
+                        loop
+                        autoPlay
+                        playsInline
+                        src={item.video}></video>
                     </div>
                     <div className="w-full flex flex-row items-center justify-between border-b pb-2">
                         <h1 className="font-bold text-lg md:text-xl">{item.name}</h1>

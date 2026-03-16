@@ -28,6 +28,7 @@ const Contact_Preview = () => {
             <input
               id="Email"
               placeholder="your name"
+              required
               type="Text"
               className="font-light outline-none border-none"
             />
