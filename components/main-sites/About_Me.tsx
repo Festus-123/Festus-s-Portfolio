@@ -21,7 +21,7 @@ const About_Me = () => {
           alt="festus"
           className="rounded-full w-60 h-60 border-6 border-amber-50 object-cover"
         />
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-center">
           <h1 className="text-3xl md:text-7xl font-extrabold text-amber-950 text-center">
             FESTUS PHILLIP A.
           </h1>
