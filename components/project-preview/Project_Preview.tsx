@@ -30,11 +30,11 @@ const Project_Preview = () => {
       </motion.h1>
 
       <motion.div
-        className="bg-black/90 text-amber-50/90 flex flex-col items-end px-4 py-8 md:py-4 "
+        className="bg-black/90 text-amber-50/90 flex flex-col items-end"
         style={{ y: projectOverTitle }}
       >
         {/* <h1 className="w-full font-bold text-2xl md:text-4xl text-white/90 text-center py-4 md:py-0">Recents Works</h1> */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 z-20 md:p-12">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-30 md:gap-20 z-20 px-2 py-8 md:p-12">
         { links.map((item, index) => (
             <div
                 key={index}
@@ -62,7 +62,7 @@ const Project_Preview = () => {
         ))}
         </div>
         <Link
-          className="font-bold flex items-center gap-2 text-xl md:text-3xl cursor-pointer p-4"
+          className="font-bold flex items-center gap-2 text-xl md:text-3xl cursor-pointer p-2 md:p-4"
           href="/projects"
         >
           <span>More On Projects</span>

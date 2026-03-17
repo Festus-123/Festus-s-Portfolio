@@ -3,7 +3,7 @@ import Hero_page from '@/components/hero/Hero_page'
 // import Sidebar from '@/components/sidebar/Sidebar'
 
 const Portfolio = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 4000));
+  await new Promise((resolve) => setTimeout(resolve, 300));
 
   return (
     <div className=''>

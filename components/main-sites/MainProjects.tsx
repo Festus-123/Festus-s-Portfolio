@@ -75,13 +75,13 @@ const Projects = () => {
       github_site: "https://github.com/Festus-123/Ciera-Fi",
       github: "/github.jpg",
     },
-    {
-      name: "Movie Search",
-      video: "/movie-search.mp4",
-      site: "https://movie-search-app-six-lake.vercel.app/",
-      github_site: "https://github.com/Festus-123/Movie-search-app",
-      github: "/github.jpg",
-    },
+    // {
+    //   name: "Movie Search",
+    //   video: "/movie-search.mp4",
+    //   site: "https://movie-search-app-six-lake.vercel.app/",
+    //   github_site: "https://github.com/Festus-123/Movie-search-app",
+    //   github: "/github.jpg",
+    // },
   ];
 
   return (
@@ -96,7 +96,7 @@ const Projects = () => {
       {/* PROJECT TITLE */}
       <motion.h1
         style={{ y: titleY }}
-        className="text-center font-extrabold text-3xl sm:text-4xl md:text-6xl text-amber-950 mb-5"
+        className="text-center font-extrabold text-4xl sm:text-6xl md:text-8xl text-amber-950 mb-5"
       >
         PROJECTS
       </motion.h1>
