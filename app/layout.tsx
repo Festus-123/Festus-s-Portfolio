@@ -5,6 +5,7 @@ import {
   Changa_One,
   Poppins,
   Montserrat,
+  Jaro,
   Oswald
 } from "next/font/google";
 import "./globals.css";
@@ -21,6 +22,12 @@ const geistMono = Geist_Mono({
 });
 
 const changaOne = Changa_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-changa-one",
+});
+
+const jaro = Jaro({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-changa-one",
@@ -53,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${changaOne.variable} ${poppins.variable} ${oswald.variable} antialiased relative`}
+        className={`${geistSans.variable} ${jaro.variable} ${geistMono.variable} ${changaOne.variable} ${poppins.variable} ${oswald.variable} antialiased relative`}
       >
         <Sidebar />
         {children}
