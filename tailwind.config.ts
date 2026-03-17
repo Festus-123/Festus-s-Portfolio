@@ -10,7 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["var(--font-changa-one)"],
+        changa: ["var(--font-changa-one)"],
+        jaro: ["var(--font-jaro)"],
+        poppins: ["var(--font-poppins)"],
+        oswald: ["var(--font-oswald)"],
       },
     },
   },

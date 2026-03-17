@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+:root {
+  --font-changa-one: var(--font-changa-one);
+  --font-jaro: var(--font-jaro);
+  --font-poppins: var(--font-poppins);
+  --font-oswald: var(--font-oswald);
+}
+
 /* .hide-scrollbar  */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -7,5 +14,5 @@
 
 .font-style {
     font-family: var(--font-jaro);
-    font-weight: 900;
+    font-weight: 1000px;
 }

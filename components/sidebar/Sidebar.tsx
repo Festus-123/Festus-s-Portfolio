@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { motion, translateAxis, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { FiX, FiMenu } from "react-icons/fi";
 import Loading from "../main-sites/Loading";
@@ -30,7 +30,7 @@ const Sidebar = () => {
   const handleNav = () => {
     setOpen(false)
     setLoading(true)
-    setTimeout(() => setLoading(false), 3000)
+    setTimeout(() => setLoading(false), 3200)
   }
 
   if(loading) return <Loading />
@@ -44,6 +44,7 @@ const Sidebar = () => {
       >
         {open ? <FiX /> : <FiMenu />}
       </div>
+      <AnimatePresence>
       { open && (
       <motion.div 
         initial={{ x: "-100%"}}
@@ -75,6 +76,7 @@ const Sidebar = () => {
         </motion.div>
       </motion.div>
         )}
+      </AnimatePresence>
     </div>
   );
 };

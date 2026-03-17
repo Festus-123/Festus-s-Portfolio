@@ -43,7 +43,7 @@ export default function Loading() {
         animate={{ y: "0%", opacity: 1 }}
         exit={{ y: "100%", opacity: 0.1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="fixed top-0 left-0 w-full h-screen bg-black/80 flex items-center justify-center z-9999"
+        className="fixed top-0 left-0 w-full h-screen bg-black/90 flex items-center justify-center z-9999"
       >
         <div className="flex gap-3">
           <motion.span

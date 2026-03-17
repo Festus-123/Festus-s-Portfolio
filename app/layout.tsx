@@ -21,29 +21,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const changaOne = Changa_One({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-changa-one",
-});
 
-const jaro = Jaro({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-changa-one",
-});
-
-const poppins = Poppins({
-  weight: ["400", "600", "700"], // normal, semi-bold, bold
-  subsets: ["latin"],
-  variable: "--font-poppins",
-});
-
-const oswald = Oswald({
-  weight: ["400", "600", "700"], // normal, semi-bold, bold
-  subsets: ["latin"],
-  variable: "--font-oswald",
-});
 
 export const metadata: Metadata = {
   title: "festus's portfolio",
@@ -60,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${jaro.variable} ${geistMono.variable} ${changaOne.variable} ${poppins.variable} ${oswald.variable} antialiased relative`}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased relative`}
       >
         <Sidebar />
         {children}
