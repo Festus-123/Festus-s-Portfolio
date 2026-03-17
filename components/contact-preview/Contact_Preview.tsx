@@ -1,12 +1,20 @@
 "use client";
 import React from "react";
 import { FiSend } from "react-icons/fi";
+import {
+  Changa_One,
+} from "next/font/google";
+
+const changaOne = Changa_One({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const Contact_Preview = () => {
   return (
     <div className="bg-amber-50/40">
-      <div className="flex flex-col md:flex-row md:items-center gap-5 md:gap-10 lg:gap-15 p-2 md:p-8 lg:p-16">
-        <h1 className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-amber-950 md:leading-40">
+      <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-20 lg:gap-30 p-2 md:p-8 lg:p-16">
+        <h1 className={`text-9xl md:text-9xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${changaOne.className}`}>
           GET <br /> IN <br /> TOUCH
         </h1>
 
