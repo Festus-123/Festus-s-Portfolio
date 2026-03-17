@@ -48,7 +48,7 @@ const HeroPage = () => {
         style={{}}
       >
         <motion.img
-          src="/festus.jpg"
+          src="/her-img.png"
           alt="Hero"
           className="w-full h-full object-cover"
         />
@@ -80,7 +80,7 @@ const HeroPage = () => {
 
         <div className={`relative p-8 w-full mt-5 ${changaOne.className}`} >
           <motion.h2
-            className="text-9xl sm:text-9xl md:text-9xl lg:tex-9xl font- leading-none md:leading-none text-[#300e0e] font-style"
+            className="text-5xl sm:text-6xl md:text-8xl lg:tex-9xl font- leading-none md:leading-none text-[#300e0e] font-style"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
