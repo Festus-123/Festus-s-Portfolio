@@ -110,23 +110,12 @@ const HeroPage = () => {
         {/* We should work together */}
         <motion.div
           // style={{ y: contnetDescribeTranslateY }}
-          className={`p-4 md:p-8 ${changaOne.className}`}>
-          <motion.h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-950 text-center leading-relaxed">
+          className={`p-4 md:p-8`}>
+          <motion.h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-950 text-center leading-relaxed mb-20">
             {/* WANT TO BUILD A USER FRIENDLY WEBSITE LET&apos;S BUILD TOGEHTER!!! */}
-            WANT A CREATIVE DESIGN OR BUILD A USER FRIENDLY WEBSITE 👇👇
+            WANT TO BUILD A RESPONSIVE USER FRIENDLY WEBSITE 👇👇
           </motion.h1>
         </motion.div>
-
-        {/* Contact section */}
-        <motion.div 
-          className="mt-40 ">
-          <Contact_Preview />
-        </motion.div>
-
-        {/* Footer */}
-        <div className="">
-          <Footer />
-        </div>
       </motion.section>
     </div>
   );

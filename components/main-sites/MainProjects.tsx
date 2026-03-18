@@ -142,15 +142,11 @@ const Projects = () => {
       </motion.div>
 
       {/* Loading */}
-      <div className="my-40">
+      <div className="py-24">
         <h1 className="text-amber-950 text-lg md:text-xl font-semibold text-center">
           More projects Loading...
         </h1>
       </div>
-
-      <Contact_Preview />
-      <Footer />
-
     </div>
   );
 };

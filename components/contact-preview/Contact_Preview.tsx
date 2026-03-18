@@ -3,9 +3,10 @@ import React from "react";
 import { FiSend } from "react-icons/fi";
 import {
   Changa_One,
+  Erica_One,
 } from "next/font/google";
 
-const changaOne = Changa_One({
+const ericaOne = Erica_One({
   weight: "400",
   subsets: ["latin"],
 });
@@ -14,7 +15,7 @@ const Contact_Preview = () => {
   return (
     <div className="bg-amber-50/40">
       <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-20 lg:gap-30 p-2 md:p-8 lg:p-16">
-        <h1 className={`text-9xl md:text-9xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${changaOne.className}`}>
+        <h1 className={`text-9xl md:text-9xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${ericaOne.className}`}>
           GET <br /> IN <br /> TOUCH
         </h1>
 

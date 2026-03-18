@@ -3,12 +3,10 @@ import React, { useState } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { FiX, FiMenu } from "react-icons/fi";
-import Loading from "../main-sites/Loading";
 
 const Sidebar = () => {
   const [open, setOpen] = useState<boolean>(false);
   const { scrollX } = useScroll();
-  const [loading, setLoading] = useState<boolean>(false)
 
   const transleteX = useTransform(scrollX, [0, 0], [-100, 1])
 
@@ -26,14 +24,6 @@ const Sidebar = () => {
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "#contact" },
   ];
-
-  const handleNav = () => {
-    setOpen(false)
-    setLoading(true)
-    setTimeout(() => setLoading(false), 3200)
-  }
-
-  if(loading) return <Loading />
 
   return (
     // Side bar pannel
@@ -66,7 +56,7 @@ const Sidebar = () => {
               <Link
                 href={item.href}
                 prefetch={false}
-                onClick={handleNav}
+                onClick={() => setOpen(false)}
                 className="text-amber-50 text-2xl md:text-3xl lg::text-4xl font-extrabold "
               >
                 {item.name}

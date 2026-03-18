@@ -2,14 +2,11 @@ import type { Metadata } from "next";
 import {
   Geist,
   Geist_Mono,
-  Changa_One,
-  Poppins,
-  Montserrat,
-  Jaro,
-  Oswald
 } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar/Sidebar";
+import Contact_Preview from "@/components/contact-preview/Contact_Preview";
+import Footer from "@/components/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,8 +18,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "festus's portfolio",
   description: "A portfolio the describes a software developer",
@@ -33,8 +28,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
   return (
     <html lang="en">
       <body
@@ -42,6 +35,8 @@ export default function RootLayout({
       >
         <Sidebar />
         {children}
+        <Contact_Preview />
+        <Footer />
       </body>
     </html>
   );
