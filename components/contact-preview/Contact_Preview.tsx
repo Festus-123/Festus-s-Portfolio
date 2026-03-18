@@ -6,16 +6,21 @@ import {
   Erica_One,
 } from "next/font/google";
 
-const ericaOne = Erica_One({
+const changaOne = Changa_One({
   weight: "400",
   subsets: ["latin"],
 });
 
 const Contact_Preview = () => {
   return (
-    <div className="bg-amber-50/40">
-      <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-20 lg:gap-30 p-2 md:p-8 lg:p-16">
-        <h1 className={`text-9xl md:text-9xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${ericaOne.className}`}>
+    <div 
+        style={{
+            backgroundImage: "url(/white-paper.jpg)",
+            backgroundAttachment: "fixed",
+        }}
+        className="">
+      <div className="bg-gray-50/60 flex flex-col md:flex-row md:items-center gap-10 md:gap-20 lg:gap-30 p-2 md:p-8 lg:p-16">
+        <h1 className={`text-5xl md:text-7xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${changaOne.className}`}>
           GET <br /> IN <br /> TOUCH
         </h1>
 

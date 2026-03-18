@@ -113,7 +113,8 @@ const HeroPage = () => {
           className={`p-4 md:p-8`}>
           <motion.h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-950 text-center leading-relaxed mb-20">
             {/* WANT TO BUILD A USER FRIENDLY WEBSITE LET&apos;S BUILD TOGEHTER!!! */}
-            WANT TO BUILD A RESPONSIVE USER FRIENDLY WEBSITE 👇👇
+            {/* WANT TO BUILD A RESPONSIVE USER FRIENDLY WEBSITE 👇👇 */}
+            Want To Build A Responsive User Friendly Website 👇👇
           </motion.h1>
         </motion.div>
       </motion.section>
