@@ -20,7 +20,7 @@ const Contact_Preview = () => {
         }}
         className="">
       <div className="bg-gray-50/60 flex flex-col md:flex-row md:items-center gap-10 md:gap-20 lg:gap-30 p-2 md:p-8 lg:p-16">
-        <h1 className={`text-5xl md:text-7xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${changaOne.className}`}>
+        <h1 className={`text-9xl md:text-9xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${changaOne.className}`}>
           GET <br /> IN <br /> TOUCH
         </h1>
 

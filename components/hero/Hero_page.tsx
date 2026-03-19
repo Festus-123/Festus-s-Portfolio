@@ -58,7 +58,7 @@ const HeroPage = () => {
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full"
           style={{ y: heroTranslateY, opacity: heroOpacity }}
         >
-          <h1 className="text-white fon-changa text-4xl md:text-6xl lg:text-7xl font-bold drop-shadow-lg">
+          <h1 className={`text-white fon-changa text-4xl md:text-6xl lg:text-7xl font-bold drop-shadow-lg ${changaOne.className}`}>
             Festus Phillip A.
           </h1>
           <p className="text-white text-lg md:text-2xl drop-shadow-lg mt-2">

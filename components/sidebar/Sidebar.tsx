@@ -40,7 +40,7 @@ const Sidebar = () => {
         initial={{ x: "-100%"}}
         animate={{ x: 0}}
         exit={{ x: "-100%"}}
-        transition={{ duration: 0.6, ease: "easeInOut"}}
+        transition={{ duration: 0.2, ease: "easeInOut"}}
         className="fixed h-screen backdrop-blur-md bg-black/80 w-full md:w-[60%] lg:w-[50%] p-16 z-20">
         <motion.div 
             initial={{ x: "-100%", y: 100}}
