@@ -41,12 +41,12 @@ const Sidebar = () => {
         animate={{ x: 0}}
         exit={{ x: "100%"}}
         transition={{ duration: 0.2, ease: "easeInOut"}}
-        className="fixed right-0 h-screen backdrop-blur-md bg-black/80 w-full md:w-[60%] lg:w-[50%] p-16 z-20">
+        className="fixed right-0 h-screen backdrop-blur-md bg-black/50 w-full md:w-[60%] lg:w-[50%] p-16 z-20">
         <motion.div 
             initial={{ x: "100%", y: 100}}
             animate={{ x: 0, y: 0}}
             transition={{ duration: 1, ease: "easeInOut"}}
-            className="flex flex-col gap-10 justify-center items-end h-full">
+            className="flex flex-col gap-10 justify-center items-end h-full px-8 md:px-16">
           {/* Portfolio */}
           {links.map((item, index) => (
             <motion.div 
@@ -57,7 +57,7 @@ const Sidebar = () => {
                 href={item.href}
                 prefetch={false}
                 onClick={() => setOpen(false)}
-                className="text-amber-50 text-2xl md:text-3xl lg::text-4xl font-extrabold "
+                className="text-amber-50/80 text-2xl md:text-3xl lg::text-4xl font-extrabold "
               >
                 {item.name}
               </Link>

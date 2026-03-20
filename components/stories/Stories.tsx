@@ -6,7 +6,7 @@ import { stories } from "../../data/stories";
 
 const Stories = () => {
   return (
-    <div className="bg-black/90  flex flex-col gap-20">
+    <div className="bg-black/90  flex flex-col gap-20 pb-20">
       {/* TITLE */}
       <h1 className="text-4xl md:text-7xl font-extrabold tracking-wide text-white/90 border-b border-white/20 p-8 md:p-16">
         STORIES

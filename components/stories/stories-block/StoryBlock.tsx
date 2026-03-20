@@ -51,13 +51,15 @@ const StoryBlock = ({
         whileHover={{ }}
       className={`flex flex-col-reverse md:flex-row ${
         reverse ? " md:flex-row-reverse" : ""
-      } items-center gap-20 md:gap-20 transition-colors duration-500`}
+      } items-center gap-20 md:gap-20 transition-colors duration-500 md:border-b md:border-[#ffffff39]`}
     >
       {/* IMAGE STACK */}
       <motion.div
         initial="initial"
         whileHover="hover"
-        className="relative w-75 h-75 cursor-pointer z-10"
+        // whileInView="hover md:none"
+        whileTap="hover"
+        className="relative w-50 h-55 md:w-75 md:h-75 cursor-pointer z-10"
       >
         {images.map((img, index) => (
           <motion.img
@@ -71,12 +73,13 @@ const StoryBlock = ({
 
       {/* TEXT */}
       <motion.div 
-        whileHover={{ opacity: 1}}
+        whileHover={{ opacity: 0.8}}
+        whileInView="hover"
         initial={{ y: 10, opacity: 0.3}}
         animate={{ y: 0, opacity: 0.5}}
         className="w-full  md:max-w-[70%] text-white/80">
         <h2 className="text-2xl md:text-4xl font-medium tracking-wide mb-4">{title}</h2>
-        <p className="text-lg md:text-xl leading-relaxed font-light tracking-wide text-gray-300">
+        <p className="text-lg md:text-xl leading-relaxed font-light tracking-wide text-gray-300 text-justify">
           {text}
         </p>
       </motion.div>

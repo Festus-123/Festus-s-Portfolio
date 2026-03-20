@@ -25,14 +25,14 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
       className="w-full flex flex-col  text-white/80 items-center justify-center gap-10"
     >
       {/* Projects  container*/}
-      <div className="bg-black/90 p-4 md:p-8 w-full h-auto flex flex-col items-start gap-20 ">
+      <div className="bg-black/90 p-4 md:p-8 w-full h-auto flex flex-col items-start gap-10 md:gap-20 ">
         <Link
           href="/projects"
           className="p-2 text-xl md:text-3xl text-white bg-white/5 rounded-full sticky top-5"
         >
           <FiArrowLeft />
         </Link>
-        <h1 className={`font-extrabold text-4xl md:text-7xl`}>
+        <h1 className={`font-extrabold text-4xl md:text-7xl mt-10 md:mt-0`}>
           {project.name}
         </h1>
         <div className="flex flex-row flex-wrap gap-5 text-lg font-light md:text-xl">
@@ -48,7 +48,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
               {project.description}
             </h1>
 
-            <div className="flex flex-row items-center gap-4 py-4 md:py-8">
+            <div className="flex flex-row items-center gap-5 py-4 md:py-8">
               {project.site && (
                 <Link
                   className="font-extrabold text-2xl md:text-4xl cursor-pointer"
@@ -59,7 +59,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
               )}
               {project.github_site && (
                 <Link
-                  className="font-extrabold text-2xl md:text-4xl cursor-pointer"
+                  className="cursor-pointer"
                   href={project.github_site}
                 >
                   <img
@@ -75,11 +75,11 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             <video className="w-full" src={project.video} />
           </div>
         </div>
-        <div className={`w-full flex text-white/80 relative`}>
+        <div className={`w-full flex text-white/80 relative mt-5`}>
           {prev && (
             <Link
               href={`/projects/${prev.slug}`}
-              className={`flex flex-row gap-2 absolute left-5 bottom-2`}
+              className={`flex flex-row gap-2 absolute left-2 bottom-2`}
             >
               <span className="text-sm md:text-xs">
                 {prev.name.slice(0, 5)}...
@@ -90,7 +90,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
           {next && (
             <Link
               href={`/projects/${next.slug}`}
-              className={`flex flex-row gap-2 absolute right-5 bottom-2`}
+              className={`flex flex-row gap-2 absolute right-2 bottom-2`}
             >
               <span className="font-extrabold text-2xl md:text-4xl ">NEXT</span>
               <span className="text-sm md:text-xs">
