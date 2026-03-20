@@ -81,9 +81,9 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
               href={`/projects/${prev.slug}`}
               className={`flex flex-row gap-2 absolute left-0 bottom-1`}
             >
-              <span className="text-sm md:text-xs">
-                {prev.name.slice(0, 5)}...
-              </span>
+              <sup className="text-sm md:text-xs">
+                {prev.name.slice(0, 3)}...
+              </sup>
               <span className="font-extrabold text-2xl md:text-4xl ">PREV</span>
             </Link>
           )}
@@ -93,9 +93,9 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
               className={`flex flex-row gap-2 absolute right-0 bottom-1`}
             >
               <span className="font-extrabold text-2xl md:text-4xl ">NEXT</span>
-              <span className="text-sm md:text-xs">
-                {next.name.slice(0, 5)}...
-              </span>
+              <sup className="text-sm md:text-xs">
+                {next.name.slice(0, 3)}...
+              </sup>
             </Link>
           )}
         </div>

@@ -79,8 +79,8 @@ const About_Me = () => {
           <span className="flex flex-col gap-2 ">
             <span className="">if (!coding 👨‍💻) {"{"}</span>
             <span className=" pl-10">
-              Gaming🎮: true, Trading 📉: true, Watching movie series🎬: true
-              reading📖: false,
+              Gaming🎮: true, Trading 📉: true, Watching movie series🎬: true,
+              reading📖: false, shopping 🛒: false
             </span>
             <span>{"}"}</span>
           </span>{" "}

@@ -8,6 +8,7 @@ export type Project = {
   stacks: string[];
   description: string;
 };
+
 export const links: Project[] = [
   {
     slug: "tax-master",
@@ -16,9 +17,9 @@ export const links: Project[] = [
     site: "https://tax-master.vercel.app/",
     github_site: "https://github.com/Festus-123/Tax-Master",
     github: "/github.jpg",
-    stacks: ["ReactJS", "Typescript", "Pdf2Image", "Git", "Vite", "tailwindcss"],
+    stacks: ["React.js", "TypeScript", "Tailwind CSS", "Vite", "html2Image", "Toaster", "Responsive UI"],
     description:
-      "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
+      "Tax Master is a modern tax estimation tool for Nigerian users, helping individuals calculate their tax obligations under 2026 regulations. It features a clean interface, real-time calculations, and intuitive data display, leveraging modern frontend technologies for a seamless experience.",
   },
   {
     slug: "mkclothing",
@@ -27,20 +28,20 @@ export const links: Project[] = [
     site: "https://mkclothing-kna2.vercel.app/",
     github_site: "https://github.com/Festus-123/mkclothing",
     github: "/github.jpg",
-    stacks: ["ReactJS", "Javascript", "supabase", "Toaster", "Vite", "tailwindcss"],
+    stacks: ["React.js", "JavaScript", "Supabase", "Tailwind CSS", "Responsive Design", "Dynamic UI", "framer motion", "Toaster"],
     description:
-      "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
+      "M & K Clothing is a fully responsive e-commerce web app showcasing clothing collections. It integrates Supabase for dynamic content, smooth browsing, and modern UI interactions, delivering a polished shopping experience. '  ' Building it dashboard making it neatly functional for adding, deleting and editing clothe products and collections",
   },
   {
     slug: "password-gen",
-    name: "Password Gen...",
+    name: "Password Generator",
     video: "/password-gen.mp4",
     site: "https://password-generator-mauve-zeta.vercel.app/",
     github_site: "https://github.com/Festus-123/Password-Generator",
     github: "/github.jpg",
-    stacks: ["ReactJS", "Javascript", "CSS"],
+    stacks: ["React.js", "Typescript", "tailwindCSS", "CSS3", "Responsive UI"],
     description:
-      "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
+      "Password Generator is a utility app that creates strong, random passwords with customizable length and complexity. It has a clean interface and fast performance, demonstrating practical React skills and a focus on user-friendly design.",
   },
   {
     slug: "movie-app",
@@ -49,9 +50,9 @@ export const links: Project[] = [
     site: "https://movie-app-delta-sand.vercel.app/",
     github_site: "https://github.com/Festus-123/Movie-app",
     github: "/github.jpg",
-    stacks: ["ReactJS", "Javascript", "Create-react-app", "TMDB api", "firebase", "tailwind"],
+    stacks: ["React.js", "JavaScript", "TMDB API", "Firebase", "Tailwind CSS", "Responsive UI"],
     description:
-      "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
+      "Movie App Main is a movie discovery app using TMDB API. Users can browse trending movies, search titles, and view detailed info while also being able to watch a short video stram of the movie. Firebase powers additional features and Tailwind CSS ensures responsive, modern design.",
   },
   {
     slug: "collecta-nft",
@@ -60,9 +61,9 @@ export const links: Project[] = [
     site: "https://collecta-nfts.vercel.app/",
     github_site: "https://github.com/Festus-123/Collecta-nfts",
     github: "/github.jpg",
-    stacks: ["ReactJS", "Javascript", "CSS"],
+    stacks: ["React.js", "JavaScript", "tailwindCss", "Responsive UI"],
     description:
-      "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
+      "Collecta NFT is an interactive showcase for NFT artworks and digital collectibles, featuring responsive layouts and engaging animations for smooth browsing and presentation. focuses mainly on the look and feel not interactions",
   },
   {
     slug: "virtual-robot",
@@ -71,9 +72,9 @@ export const links: Project[] = [
     site: "https://virtual-robot-gold.vercel.app/",
     github_site: "https://github.com/Festus-123/virtual-robot",
     github: "/github.jpg",
-    stacks: ["ReactJS", "Javascript", "threeJS", "tailwindcss", "useRef", "Canvas", "Vite"],
+    stacks: ["React.js", "JavaScript", "Three.js", "Tailwind CSS", "Canvas Animations"],
     description:
-      "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
+      "Virtual Robot is an interactive 3D simulation using Three.js and React. It demonstrates advanced animations, motion controls, and immersive graphics directly in the browser.",
   },
   {
     slug: "ciera-fi",
@@ -82,8 +83,8 @@ export const links: Project[] = [
     site: "https://ciera-fi.vercel.app/",
     github_site: "https://github.com/Festus-123/Ciera-Fi",
     github: "/github.jpg",
-    stacks: ["ReactJS", "javascript", "Framer motion", "tailwindcss", "Vite"],
+    stacks: ["React.js", "JavaScript", "Framer Motion", "Tailwind CSS", "Responsive UIs"],
     description:
-      "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
+      "Ciera-Fi is a dynamic interactive web app showcasing advanced frontend animations with Framer Motion. It combines smooth transitions with responsive layouts for an engaging user experience.",
   },
 ];

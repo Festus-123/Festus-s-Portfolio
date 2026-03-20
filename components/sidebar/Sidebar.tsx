@@ -57,7 +57,7 @@ const Sidebar = () => {
                 href={item.href}
                 prefetch={false}
                 onClick={() => setOpen(false)}
-                className="text-amber-50/80 text-2xl md:text-3xl lg:text-4xl font-extrabold "
+                className="text-white/80 text-2xl md:text-3xl lg:text-4xl font-extrabold "
               >
                 {item.name}
               </Link>

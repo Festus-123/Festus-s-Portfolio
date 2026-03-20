@@ -25,7 +25,7 @@ const Project_Preview = () => {
       </motion.h1>
 
       <motion.div
-        className="bg-black/90 text-amber-50/90 flex flex-col items-end"
+        className="bg-black/90 text-white/80 flex flex-col items-end"
         style={{ y: projectOverTitle }}
       >
         {/* <h1 className="w-full font-bold text-2xl md:text-4xl text-white/90 text-center py-4 md:py-0">Recents Works</h1> */}
