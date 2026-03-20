@@ -37,20 +37,20 @@ const Sidebar = () => {
       <AnimatePresence>
       { open && (
       <motion.div 
-        initial={{ x: "-100%"}}
+        initial={{ x: "100%"}}
         animate={{ x: 0}}
-        exit={{ x: "-100%"}}
+        exit={{ x: "100%"}}
         transition={{ duration: 0.2, ease: "easeInOut"}}
-        className="fixed h-screen backdrop-blur-md bg-black/80 w-full md:w-[60%] lg:w-[50%] p-16 z-20">
+        className="fixed right-0 h-screen backdrop-blur-md bg-black/80 w-full md:w-[60%] lg:w-[50%] p-16 z-20">
         <motion.div 
-            initial={{ x: "-100%", y: 100}}
+            initial={{ x: "100%", y: 100}}
             animate={{ x: 0, y: 0}}
             transition={{ duration: 1, ease: "easeInOut"}}
-            className="flex flex-col gap-10 justify-center h-full">
+            className="flex flex-col gap-10 justify-center items-end h-full">
           {/* Portfolio */}
           {links.map((item, index) => (
             <motion.div 
-                whileHover={{ x: 40}}
+                whileHover={{ x: -40}}
                 transition={{ duration: 0.2, ease: "easeInOut"}}
                 style={{}} key={index}>
               <Link

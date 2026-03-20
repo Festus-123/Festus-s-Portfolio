@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { links } from "@/data/projects";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight, FiArrowLeft } from "react-icons/fi";
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
@@ -17,42 +17,90 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const next = links[index + 1];
 
   return (
-    <div className="w-full flex flex-col bg-black/90 text-white/80 items-center justify-center gap-10 p-4 md:py-8">
+    <div
+      style={{
+        backgroundImage: "url(/white-paper.jpg)",
+        backgroundAttachment: "fixed",
+      }}
+      className="w-full flex flex-col  text-white/80 items-center justify-center gap-10"
+    >
       {/* Projects  container*/}
-      <div className="w-full h-auto p-4 flex flex-col items-start justify-evenly gap-10 ">
+      <div className="bg-black/90 p-4 md:p-8 w-full h-auto flex flex-col items-start gap-20 ">
+        <Link
+          href="/projects"
+          className="p-2 text-xl md:text-3xl text-white bg-white/5 rounded-full sticky top-5"
+        >
+          <FiArrowLeft />
+        </Link>
         <h1 className={`font-extrabold text-4xl md:text-7xl`}>
           {project.name}
         </h1>
-        <div className="flex flex-row gap-20 text-lg font-light">
+        <div className="flex flex-row flex-wrap gap-5 text-lg font-light md:text-xl">
           {project.stacks.map((stack, index) => (
-            <p key={index} className=" py-1 px-4 rounded-xl ">
+            <p key={index} className=" py-1 px-2 md:px-8 rounded-full border border-[#ffffff41]">
               {stack}
             </p>
           ))}
         </div>
-        <div className="h-full flex md:flex-row flex-col gap-10 p-4 rounded">
-          <video className=" w-full md:w-[50%]  h-auto" src={project.video} />
-          <div>
-            <h1 className="font-light text-lg md:text-2xl leading-relaxed">
+        <div className="flex md:flex-row flex-col gap-20 p-4 md:p-8">
+          <div className="w-full md:w-[50%]">
+            <h1 className="font-light tracking-wide text-xl md:text-2xl text-justify leading-relaxed">
               {project.description}
             </h1>
-            {project.site && (
-              <Link
-                className="text-center p-2 md:p-3 font-extrabold text-lg md:text-2xl cursor-pointer"
-                href={project.site}
-              >
-                <FiArrowUpRight />
-              </Link>
-            )}
+
+            <div className="flex flex-row items-center gap-4 py-4 md:py-8">
+              {project.site && (
+                <Link
+                  className="font-extrabold text-2xl md:text-4xl cursor-pointer"
+                  href={project.site}
+                >
+                  <FiArrowUpRight />
+                </Link>
+              )}
+              {project.github_site && (
+                <Link
+                  className="font-extrabold text-2xl md:text-4xl cursor-pointer"
+                  href={project.github_site}
+                >
+                  <img
+                    src={project.github}
+                    alt={project.github}
+                    className="w-5 h-5 rounded-full"
+                  />
+                </Link>
+              )}
+            </div>
+          </div>
+          <div className="w-full md:w-[50%] bg-white p-2 drop-shadow-amber-50 drop-shadow-lg">
+            <video className="w-full" src={project.video} />
           </div>
         </div>
+        <div className={`w-full flex text-white/80 relative`}>
+          {prev && (
+            <Link
+              href={`/projects/${prev.slug}`}
+              className={`flex flex-row gap-2 absolute left-5 bottom-2`}
+            >
+              <span className="text-sm md:text-xs">
+                {prev.name.slice(0, 5)}...
+              </span>
+              <span className="font-extrabold text-2xl md:text-4xl ">PREV</span>
+            </Link>
+          )}
+          {next && (
+            <Link
+              href={`/projects/${next.slug}`}
+              className={`flex flex-row gap-2 absolute right-5 bottom-2`}
+            >
+              <span className="font-extrabold text-2xl md:text-4xl ">NEXT</span>
+              <span className="text-sm md:text-xs">
+                {next.name.slice(0, 5)}...
+              </span>
+            </Link>
+          )}
+        </div>
       </div>
-      <div className="border-t border-b py-10 flex flex-col gap-4"></div>
-      <div className="flex justify-between mt-20">
-        {prev && <Link href={`/projects/${prev.slug}`}>← {prev.name}</Link>}
-
-        {next && <Link href={`/projects/${next.slug}`}>{next.name} →</Link>}
-      </div>
+      <div className="p-24"></div>
     </div>
   );
 };

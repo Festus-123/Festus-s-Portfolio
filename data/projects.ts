@@ -16,7 +16,7 @@ export const links: Project[] = [
     site: "https://tax-master.vercel.app/",
     github_site: "https://github.com/Festus-123/Tax-Master",
     github: "/github.jpg",
-    stacks: ["ReactJS, Typescript, Pdf2Image"],
+    stacks: ["ReactJS", "Typescript", "Pdf2Image", "Git", "Vite", "tailwindcss"],
     description:
       "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
   },
@@ -27,7 +27,7 @@ export const links: Project[] = [
     site: "https://mkclothing-kna2.vercel.app/",
     github_site: "https://github.com/Festus-123/mkclothing",
     github: "/github.jpg",
-    stacks: ["ReactJS, Typescript, Pdf2Image"],
+    stacks: ["ReactJS", "Javascript", "supabase", "Toaster", "Vite", "tailwindcss"],
     description:
       "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
   },
@@ -38,7 +38,7 @@ export const links: Project[] = [
     site: "https://password-generator-mauve-zeta.vercel.app/",
     github_site: "https://github.com/Festus-123/Password-Generator",
     github: "/github.jpg",
-    stacks: ["ReactJS, Typescript, Pdf2Image"],
+    stacks: ["ReactJS", "Javascript", "CSS"],
     description:
       "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
   },
@@ -49,7 +49,7 @@ export const links: Project[] = [
     site: "https://movie-app-delta-sand.vercel.app/",
     github_site: "https://github.com/Festus-123/Movie-app",
     github: "/github.jpg",
-    stacks: ["ReactJS, Typescript, Pdf2Image"],
+    stacks: ["ReactJS", "Javascript", "Create-react-app", "TMDB api", "firebase",],
     description:
       "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
   },
@@ -60,7 +60,7 @@ export const links: Project[] = [
     site: "https://collecta-nfts.vercel.app/",
     github_site: "https://github.com/Festus-123/Collecta-nfts",
     github: "/github.jpg",
-    stacks: ["ReactJS, Typescript, Pdf2Image"],
+    stacks: ["ReactJS", "Javascript", "CSS"],
     description:
       "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
   },
@@ -71,7 +71,7 @@ export const links: Project[] = [
     site: "https://virtual-robot-gold.vercel.app/",
     github_site: "https://github.com/Festus-123/virtual-robot",
     github: "/github.jpg",
-    stacks: ["ReactJS, Typescript, Pdf2Image"],
+    stacks: ["ReactJS", "Javascript", "threeJS", "tailwindcss", "useRef", "Canvas", "Vite"],
     description:
       "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
   },
@@ -82,7 +82,7 @@ export const links: Project[] = [
     site: "https://ciera-fi.vercel.app/",
     github_site: "https://github.com/Festus-123/Ciera-Fi",
     github: "/github.jpg",
-    stacks: ["ReactJS, Typescript, Pdf2Image"],
+    stacks: ["ReactJS", "javascript", "Framer motion", "tailwindcss", "Vite"],
     description:
       "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
   },

@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
+import { links } from "@/data/projects";
 
 // import Project_container from "../project-container/Project_container";
 import { motion, useTransform, useScroll } from "framer-motion";
@@ -9,12 +10,6 @@ import { motion, useTransform, useScroll } from "framer-motion";
 
 const Project_Preview = () => {
   const { scrollY } = useScroll();
-
-  const links = [
-    {name: "Tax Master", video: "/tax-master.mp4", site: "https://tax-master.vercel.app/", github_site: "https://github.com/Festus-123/Tax-Master",  github: "/github.jpg"},
-    {name: "M & K Clothing", video: "/mk-clothing.mp4", site: "https://mkclothing-kna2.vercel.app/", github_site: "https://github.com/Festus-123/mkclothing",  github: "/github.jpg"},
-    // {name: "Collecta NFT", image: "/project-1.png", site: "", github: "/github.jpg"},
-  ]
 
   //   const projectNextOpacity = useTransform(scrollY, [800, 1000], [0.1, 1]);
   const projectTranslateY = useTransform(scrollY, [400, 800], [100, -50]);
@@ -35,11 +30,12 @@ const Project_Preview = () => {
       >
         {/* <h1 className="w-full font-bold text-2xl md:text-4xl text-white/90 text-center py-4 md:py-0">Recents Works</h1> */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-30 md:gap-20 z-20 px-2 py-8 md:p-12">
-        { links.map((item, index) => (
+        { links.slice(0, 2).map((item, index) => (
             <div
                 key={index}
                 className="flex flex-col gap-4 items-center">
-                    <div className="w-full">
+                    <div className="w-full relative">
+                      <Link href={`/projects/${item.slug}`} className="absolute w-full h-full cursor-pointer z-10"/>
                       <video 
                         muted
                         loop
@@ -50,12 +46,16 @@ const Project_Preview = () => {
                     <div className="w-full flex flex-row items-center justify-between border-b pb-2">
                         <h1 className="font-bold text-lg md:text-xl">{item.name}</h1>
                         <div className="font-bold text-xl md:text-2xl flex flex-row items-center gap-2">
+                          { item.site && (
                             <Link href={item.site}>
                                 <FiArrowUpRight />
                             </Link>
+                          )}
+                          { item.github_site && (
                             <Link href={item.github_site}>
                                 <img className="w-5 h-5 rounded-full" src={item.github} alt="GitHub"/>
                             </Link>
+                          )}
                         </div>
                     </div>
             </div>

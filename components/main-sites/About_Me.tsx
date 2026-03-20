@@ -1,8 +1,10 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
+// import { experiences } from "@/data/experience";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Stories from "../stories/Stories";
 
 const About_Me = () => {
   const { scrollY } = useScroll();
@@ -17,10 +19,8 @@ const About_Me = () => {
       }}
       className="w-full h-full relative"
     >
-      {/* About me  */}
-
-      {/* Photo */}
-      <motion.div
+        {/* Name section and active */}
+      <motion.section
         style={{ y: translateTitle, opacity: translateTitleOpacity }}
         className="w-full flex flex-col md:flex-row items-center gap-10 p-8 md:p-16"
       >
@@ -37,9 +37,10 @@ const About_Me = () => {
             </span>
           </p>
         </div>
-      </motion.div>
+      </motion.section>
 
-      <motion.div
+      {/* About me content section */}
+      <motion.section
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8 }}
@@ -90,7 +91,10 @@ const About_Me = () => {
         </p>
         {/* Album */}
         {/* <div className="p-16"></div> */}
-      </motion.div>
+      </motion.section>
+
+      <Stories />
+
     </div>
   );
 };
