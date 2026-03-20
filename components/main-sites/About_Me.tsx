@@ -9,7 +9,7 @@ import Stories from "../stories/Stories";
 const About_Me = () => {
   const { scrollY } = useScroll();
   const translateTitle = useTransform(scrollY, [0, 400], [0, 300]);
-  const translateTitleOpacity = useTransform(scrollY, [0, 200], [1, 0]);
+  const translateTitleOpacity = useTransform(scrollY, [0, 150], [1, 0]);
   const translateContent = useTransform(scrollY, [0, 400], [0, -300]);
   return (
     <div
@@ -21,8 +21,8 @@ const About_Me = () => {
     >
         {/* Name section and active */}
       <motion.section
-        style={{ y: translateTitle, opacity: translateTitleOpacity }}
-        className="w-full flex flex-col md:flex-row items-center gap-10 p-8 md:p-16"
+        style={{ opacity: translateTitleOpacity }}
+        className=" sticky top-5 w-full flex flex-col md:flex-row items-center gap-10 p-8 md:p-16"
       >
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-3xl md:text-6xl font-extrabold text-amber-950 text-center">
@@ -93,7 +93,7 @@ const About_Me = () => {
         {/* <div className="p-16"></div> */}
       </motion.section>
 
-      <Stories />
+      {/* <Stories /> */}
 
     </div>
   );

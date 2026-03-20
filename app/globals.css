@@ -7,11 +7,19 @@
   --font-oswald: var(--font-oswald);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* .hide-scrollbar  */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 .font-style {
     font-family: var(--font-jaro);
     font-weight: 1000px;

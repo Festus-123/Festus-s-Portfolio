@@ -49,7 +49,7 @@ export const links: Project[] = [
     site: "https://movie-app-delta-sand.vercel.app/",
     github_site: "https://github.com/Festus-123/Movie-app",
     github: "/github.jpg",
-    stacks: ["ReactJS", "Javascript", "Create-react-app", "TMDB api", "firebase",],
+    stacks: ["ReactJS", "Javascript", "Create-react-app", "TMDB api", "firebase", "tailwind"],
     description:
       "Tax Master is projct designed to help Nigerian users calculate and estimate their tax under the nigeran 2026 tax regulations ",
   },

@@ -19,7 +19,7 @@ const Project_Preview = () => {
     <div className="flex flex-col gap-20 items-center">
       <motion.h1
         style={{ y: projectTranslateY }}
-        className="text-center font-extrabold text-3xl sm:text-24l md:text-6xl text-amber-950"
+        className=" text-center font-extrabold text-3xl sm:text-24l md:text-6xl text-amber-950"
       >
         RECENT PROJECTS
       </motion.h1>

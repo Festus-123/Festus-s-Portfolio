@@ -4,6 +4,7 @@ import {
   Geist_Mono,
 } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 import Sidebar from "@/components/sidebar/Sidebar";
 import Contact_Preview from "@/components/contact-preview/Contact_Preview";
 import Footer from "@/components/footer/Footer";
@@ -33,9 +34,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable}  antialiased relative`}
       >
+        <Toaster 
+          position="bottom-right"
+          />
         <Sidebar />
         {children}
+        <div id="contact">
         <Contact_Preview />
+        </div>
         <Footer />
       </body>
     </html>

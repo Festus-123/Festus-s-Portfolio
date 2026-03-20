@@ -37,7 +37,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
         </h1>
         <div className="flex flex-row flex-wrap gap-5 text-lg font-light md:text-xl">
           {project.stacks.map((stack, index) => (
-            <p key={index} className=" py-1 px-2 md:px-8 rounded-full border border-[#ffffff41]">
+            <p key={index} className=" py-1 px-4 md:px-8 rounded-full border border-[#ffffff41]">
               {stack}
             </p>
           ))}
@@ -75,11 +75,11 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             <video className="w-full" src={project.video} />
           </div>
         </div>
-        <div className={`w-full flex text-white/80 relative mt-5`}>
+        <div className={`w-full flex text-white/80 relative mt-10 md:mt-5`}>
           {prev && (
             <Link
               href={`/projects/${prev.slug}`}
-              className={`flex flex-row gap-2 absolute left-2 bottom-2`}
+              className={`flex flex-row gap-2 absolute left-0 bottom-1`}
             >
               <span className="text-sm md:text-xs">
                 {prev.name.slice(0, 5)}...
@@ -90,7 +90,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
           {next && (
             <Link
               href={`/projects/${next.slug}`}
-              className={`flex flex-row gap-2 absolute right-2 bottom-2`}
+              className={`flex flex-row gap-2 absolute right-0 bottom-1`}
             >
               <span className="font-extrabold text-2xl md:text-4xl ">NEXT</span>
               <span className="text-sm md:text-xs">

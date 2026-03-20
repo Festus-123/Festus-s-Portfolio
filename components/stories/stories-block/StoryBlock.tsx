@@ -48,7 +48,7 @@ const StoryBlock = ({
 }) => {
   return (
     <motion.div
-        whileHover={{ }}
+      whileHover={{ }}
       className={`flex flex-col-reverse md:flex-row ${
         reverse ? " md:flex-row-reverse" : ""
       } items-center gap-20 md:gap-20 transition-colors duration-500 md:border-b md:border-[#ffffff39]`}
@@ -58,7 +58,6 @@ const StoryBlock = ({
         initial="initial"
         whileHover="hover"
         // whileInView="hover md:none"
-        whileTap="hover"
         className="relative w-50 h-55 md:w-75 md:h-75 cursor-pointer z-10"
       >
         {images.map((img, index) => (
@@ -74,7 +73,6 @@ const StoryBlock = ({
       {/* TEXT */}
       <motion.div 
         whileHover={{ opacity: 0.8}}
-        whileInView="hover"
         initial={{ y: 10, opacity: 0.3}}
         animate={{ y: 0, opacity: 0.5}}
         className="w-full  md:max-w-[70%] text-white/80">

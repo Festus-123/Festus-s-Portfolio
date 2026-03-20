@@ -37,7 +37,7 @@ const Projects = () => {
       {/* PROJECT TITLE */}
       <motion.h1
         style={{ y: titleY }}
-        className={`text-center font-extrabold text-6xl sm:text-8xl md:text-9xl text-amber-950 mb-5 ${changaOne.className}`}
+        className={` text-center font-extrabold text-6xl sm:text-8xl md:text-9xl text-amber-950 mb-5 ${changaOne.className}`}
       >
         PROJECTS
       </motion.h1>

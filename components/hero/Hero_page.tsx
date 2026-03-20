@@ -80,7 +80,7 @@ const HeroPage = () => {
 
         <div className={`relative p-8 w-full mt-5 ${changaOne.className}`} >
           <motion.h2
-            className="text-6xl sm:text-7xl md:text-8xl lg:tex-9xl font- leading-none md:leading-none text-[#300e0e] font-style"
+            className="text-6xl sm:text-7xl md:text-8xl lg:tex-9xl font- leading-none md:leading-none text-amber-950 font-style"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
