@@ -48,11 +48,16 @@ const HeroPage = () => {
         style={{}}
       >
         <motion.img
-          src="/her-img.png"
+          src="/forground.png"
           alt="Hero"
-          className="w-full h-full object-cover"
+          className="md:hidden w-full h-full object-cover bg-top-right bg-blend-saturation"
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
+        <motion.img
+          src="/forground.png"
+          alt="Hero"
+          className="hidden md:block w-full h-full md:h-350 object-cover place-self-center bg-blend-saturation"
+        />
+        <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
 
         <motion.div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full"
