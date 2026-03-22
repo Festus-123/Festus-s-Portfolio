@@ -29,7 +29,7 @@ const About_Me = () => {
             FESTUS PHILLIP A.
           </h1>
           <p className="text-amber-950 text-lg md:text-xl font-medium flex flex-col items-center md:items-start">
-            <span>A Fullstack Web Developer</span>
+            <span>A Frontend Web Developer</span>
 
             <span className="flex items-center gap-4 text-center">
               <span>| Active</span> <FiCheckCircle />
@@ -73,7 +73,7 @@ const About_Me = () => {
         </div>
 
         <p className="font-light text-justify w-full lg::w-[50%] text-lg md:text-2xl leading-relaxed">
-          I&apos;m a passionate Fullstack Developer and Computer Science student
+          I&apos;m a passionate Frontend Developer and Computer Science student
           with a strong focus on building clean, functional, and user-friendly
           digital experiences. <br /> <br />
           <span className="flex flex-col gap-2 ">

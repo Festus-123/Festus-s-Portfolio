@@ -13,30 +13,33 @@ const changaOne = Changa_One({
 const Contact_Preview = () => {
   // const [loading, setLoading] = useState<boolean>(false)
 
-  const handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // setLoading(true)
-    const toastId = toast.loading("Sending Message!");
+const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    const formData = new FormData(e.currentTarget);
+  const toastId = toast.loading("Sending Message!");
 
-    const res = await fetch("/api/send", {
-      method: "POST",
-      body: JSON.stringify({
-        email: formData.get("email"),
-        name: formData.get("name"),
-        message: formData.get("message"),
-      }),
-    });
+  const form = e.currentTarget as HTMLFormElement ; // store reference
+  const formData = new FormData(form);
 
-    const data = await res.json();
+  const res = await fetch("/api/send", {
+    method: "POST",
+    body: JSON.stringify({
+      email: formData.get("email"),
+      name: formData.get("name"),
+      message: formData.get("message"),
+    }),
+  });
 
-    if (data.success) {
-      toast.success("Message sent succesfully", { id: toastId });
-    } else {
-      toast.error("Err, couldn't send message", { id: toastId });
-    }
-  };
+  const data = await res.json();
+
+  if (data.success) {
+    toast.success("Message sent successfully", { id: toastId });
+
+    form.reset(); // ✅ works now
+  } else {
+    toast.error("Err, couldn't send message", { id: toastId });
+  }
+};
   return (
     <div
       style={{

@@ -36,6 +36,7 @@ export default function RootLayout({
       >
         <Toaster 
           position="bottom-right"
+          theme="system"
           />
         <Sidebar />
         {children}
