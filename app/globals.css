@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* .hide-scrollbar  */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;

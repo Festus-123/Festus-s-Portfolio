@@ -72,7 +72,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             </div>
           </div>
           <div className="w-full md:w-[50%] bg-white p-2 drop-shadow-amber-50 drop-shadow-lg">
-            <video className="w-full" src={project.video} />
+            <img className="w-full" src={project.image} />
           </div>
         </div>
         <div className={`w-full flex text-white/80 relative mt-10 md:mt-5`}>

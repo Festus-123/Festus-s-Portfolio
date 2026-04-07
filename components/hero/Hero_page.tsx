@@ -4,26 +4,13 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   Changa_One,
-  Jaro,
-  Erica_One,
-  Rubik_Maps
 } from "next/font/google";
 
 import About_Preview from "../about-preview/About_Preview";
 import Project_Preview from "../project-preview/Project_Preview";
-import Contact_Preview from "../contact-preview/Contact_Preview";
-import Footer from "../footer/Footer";
 
 const changaOne = Changa_One({
   weight: "400",
-  subsets: ["latin"],
-});
-const ericaOne = Erica_One({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const rubikMaps = Rubik_Maps({
-  weight: ["400"],
   subsets: ["latin"],
 });
 

@@ -42,6 +42,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
 };
   return (
     <div
+      id="contact"
       style={{
         backgroundImage: "url(/white-paper.jpg)",
         backgroundAttachment: "fixed",

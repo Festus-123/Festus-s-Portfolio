@@ -53,12 +53,8 @@ const Projects = () => {
 
               <div className="w-full relative">
                 <Link href={`/projects/${item.slug}`} className="absolute z-10 w-full h-full cursor-pointer"/>
-                <video
-                  src={item.video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                <img
+                  src={item.image}                  
                   className="rounded-lg w-full"
                 />
               </div>

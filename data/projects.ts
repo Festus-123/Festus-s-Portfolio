@@ -1,7 +1,7 @@
 export type Project = {
   slug: string;
   name: string;
-  video: string;
+  image: string;
   site?: string;
   github_site?: string;
   github: string;
@@ -13,7 +13,7 @@ export const links: Project[] = [
   {
     slug: "tax-master",
     name: "Tax Master",
-    video: "/tax-master.mp4",
+    image: "/tax-master.png",
     site: "https://tax-master.vercel.app/",
     github_site: "https://github.com/Festus-123/Tax-Master",
     github: "/github.jpg",
@@ -24,7 +24,7 @@ export const links: Project[] = [
   {
     slug: "mkclothing",
     name: "M & K Clothing",
-    video: "/mk-clothing.mp4",
+    image: "/mk-clothing.png",
     site: "https://mkclothing-kna2.vercel.app/",
     github_site: "https://github.com/Festus-123/mkclothing",
     github: "/github.jpg",
@@ -35,7 +35,7 @@ export const links: Project[] = [
   {
     slug: "password-gen",
     name: "Password Generator",
-    video: "/password-gen.mp4",
+    image: "/password-gen.png",
     site: "https://password-generator-mauve-zeta.vercel.app/",
     github_site: "https://github.com/Festus-123/Password-Generator",
     github: "/github.jpg",
@@ -46,18 +46,18 @@ export const links: Project[] = [
   {
     slug: "movie-app",
     name: "Movie App Main",
-    video: "/movie-app.mp4",
+    image: "/movie-app.png",
     site: "https://movie-app-delta-sand.vercel.app/",
     github_site: "https://github.com/Festus-123/Movie-app",
     github: "/github.jpg",
     stacks: ["React.js", "JavaScript", "TMDB API", "Firebase", "Tailwind CSS", "Responsive UI"],
     description:
-      "Movie App Main is a movie discovery app using TMDB API. Users can browse trending movies, search titles, and view detailed info while also being able to watch a short video stram of the movie. Firebase powers additional features and Tailwind CSS ensures responsive, modern design.",
+      "Movie App Main is a movie discovery app using TMDB API. Users can browse trending movies, search titles, and view detailed info while also being able to watch a short image stram of the movie. Firebase powers additional features and Tailwind CSS ensures responsive, modern design.",
   },
   {
     slug: "collecta-nft",
     name: "Collecta NFT",
-    video: "/collecta-nft.mp4",
+    image: "/collecta-nft.png",
     site: "https://collecta-nfts.vercel.app/",
     github_site: "https://github.com/Festus-123/Collecta-nfts",
     github: "/github.jpg",
@@ -68,7 +68,7 @@ export const links: Project[] = [
   {
     slug: "virtual-robot",
     name: "Virtual Robot",
-    video: "/virtual-robot.mp4",
+    image: "/virtual-robot.png",
     site: "https://virtual-robot-gold.vercel.app/",
     github_site: "https://github.com/Festus-123/virtual-robot",
     github: "/github.jpg",
@@ -79,12 +79,23 @@ export const links: Project[] = [
   {
     slug: "ciera-fi",
     name: "Ciera-Fi",
-    video: "/ciera-fi.mp4",
+    image: "/ciera-fi.png",
     site: "https://ciera-fi.vercel.app/",
     github_site: "https://github.com/Festus-123/Ciera-Fi",
     github: "/github.jpg",
     stacks: ["React.js", "JavaScript", "Framer Motion", "Tailwind CSS", "Responsive UIs"],
     description:
       "Ciera-Fi is a dynamic interactive web app showcasing advanced frontend animations with Framer Motion. It combines smooth transitions with responsive layouts for an engaging user experience.",
+  },
+  {
+    slug: "phipest-bens",
+    name: "Phipest-Bens Int Nig Ltd.",
+    image: "/phipest-bens.png",
+    site: "https://phipest-bens.vercel.app/",
+    github_site: "https://github.com/Festus-123/phipest-bens",
+    github: "/github.jpg",
+    stacks: ["Next.js", "TypeScript", "GSAP", "Tailwind CSS", "Responsive UI"],
+    description:
+      "This Site was Tailored for the company- Phipest-Bens International Nigerial Limited to help them create an online preense. Phipest-bens is a firm engaged in different activities including construstions and car sales. Making thewebsite performance optimised and UI responsive and context clearity, it ensures constomer to make enquiry to the firm in just a dail",
   },
 ];

@@ -36,12 +36,9 @@ const Project_Preview = () => {
                 className="flex flex-col gap-4 items-center">
                     <div className="w-full relative">
                       <Link href={`/projects/${item.slug}`} className="absolute w-full h-full cursor-pointer z-10"/>
-                      <video 
-                        muted
-                        loop
-                        autoPlay
-                        playsInline
-                        src={item.video}></video>
+                      <img
+                        src={item.image} 
+                        className=""/>
                     </div>
                     <div className="w-full flex flex-row items-center justify-between border-b pb-2">
                         <h1 className="font-bold text-lg md:text-xl">{item.name}</h1>
