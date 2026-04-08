@@ -1,6 +1,7 @@
 "use client";
 
 import { FiSend } from "react-icons/fi";
+import { useState } from "react";
 import { Changa_One, Erica_One } from "next/font/google";
 import { toast } from "sonner";
 import contacts from "@/data/contact";
@@ -11,7 +12,7 @@ const changaOne = Changa_One({
 });
 
 const Contact_Preview = () => {
-  // const [loading, setLoading] = useState<boolean>(false)
+  const [loading, setLoading] = useState<boolean>(false)
 
 const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
   e.preventDefault();
@@ -20,6 +21,9 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
 
   const form = e.currentTarget as HTMLFormElement ; // store reference
   const formData = new FormData(form);
+
+  if(loading) setLoading(false);
+  else setLoading(true)
 
   const res = await fetch("/api/send", {
     method: "POST",
@@ -33,10 +37,12 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
   const data = await res.json();
 
   if (data.success) {
+    setLoading(false)
     toast.success("Message sent successfully", { id: toastId });
 
-    form.reset(); // ✅ works now
+    form.reset();
   } else {
+    setLoading(false)
     toast.error("Err, couldn't send message", { id: toastId });
   }
 };
@@ -96,7 +102,9 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
               className="font-light min-h-25 max:h-25 md:min-h-30 md:max-h-30 outline-none border-none hide-scrollbar"
             />
           </div>
-          <button className="text-2xl md:text-4xl font-semibold italic border-2 border-amber-950 rounded-full p-2 md:p-3 absolute bottom-5 right-5 cursor-pointer">
+          <button 
+            disabled={loading}
+            className="text-2xl md:text-4xl font-semibold italic border-2 border-amber-950 rounded-full p-2 md:p-3 absolute bottom-5 right-5 cursor-pointer">
             <FiSend />
           </button>
         </form>

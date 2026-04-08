@@ -1,5 +1,5 @@
 
-import { FaLinkedin, FaGithub, FaWhatsapp, FaTelegram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { SiX } from "react-icons/si";
 import { IconType } from "react-icons";
 
