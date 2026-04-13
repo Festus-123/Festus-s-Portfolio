@@ -98,4 +98,15 @@ export const links: Project[] = [
     description:
       "This Site was Tailored for the company- Phipest-Bens International Nigerial Limited to help them create an online preense. Phipest-bens is a firm engaged in different activities including construstions and car sales. Making thewebsite performance optimised and UI responsive and context clearity, it ensures constomer to make enquiry to the firm in just a dail",
   },
+  {
+    slug: "debatex",
+    name: "DebateX",
+    image: "/debatex.png",
+    site: "https://debate-x.vercel.app/",
+    github_site: "https://github.com/Festus-123/debate-x",
+    github: "/github.jpg",
+    stacks: ["Next.js", "TypeScript", "GSAP", "Tailwind CSS", "Responsive UI", "Supabase"],
+    description:
+      "DebateX a startup project by Festus Philli to host Live debates accross the globe with interesting figures and occurence, A place where -Everyone is the Judge, -EveryOne is heard, -Every Opinion matters, -Questions are asked, -Where people grow more in the digital world. DebateX brings about connectivity and communication espite ifferent region race and time zone, it also bring about Reconcepting Misconception",
+  },
 ];
