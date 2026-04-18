@@ -25,6 +25,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
       className="w-full flex flex-col  text-white/80 items-center justify-center gap-10"
     >
       {/* Projects  container*/}
+      <div className="bg-white">
       <div className="bg-black/90 p-4 md:p-8 w-full h-auto flex flex-col items-start gap-10 md:gap-20 ">
         <Link
           href="/projects"
@@ -42,8 +43,8 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             </p>
           ))}
         </div>
-        <div className="flex md:flex-row flex-col gap-20 p-4 md:p-8">
-          <div className="w-full md:w-[50%]">
+        <div className="flex md:flex-row flex-col-reverse gap-20 md:gap-10 ">
+          <div className="w-full md:w-[50%] p-4 md:p-8">
             <h1 className="font-light tracking-wide text-xl md:text-2xl text-justify leading-relaxed">
               {project.description}
             </h1>
@@ -71,11 +72,11 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
               )}
             </div>
           </div>
-          <div className="w-full md:w-[50%] bg-white p-2 drop-shadow-amber-50 drop-shadow-lg">
-            <img className="w-full" src={project.image} />
+          <div className="w-full md:w-[50%] md:p-8">
+            <img className="w-full h-full" src={project.image} />
           </div>
         </div>
-        <div className={`w-full flex text-white/80 relative mt-10 md:mt-5`}>
+        <div className={`w-full flex text-white/80 relative mt-10 md:mt-5 `}>
           {prev && (
             <Link
               href={`/projects/${prev.slug}`}
@@ -99,6 +100,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             </Link>
           )}
         </div>
+      </div>
       </div>
       <div className="p-24"></div>
     </div>

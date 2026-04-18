@@ -28,11 +28,20 @@ const Sidebar = () => {
   return (
     // Side bar pannel
     <div className="flex flex-row ">
+      <div className={`${open && "flex flex-row items-center gap-5"} ${open && "absolute"} fixed z-50 right-5 top-5 text-2xl cursor-pointer drop-shadow-xl`}>
+        { open && (
+          <div className=" text-white">
+            <h1 className="font-light text-center traking-wider">
+              FesCode
+            </h1>
+          </div>
+        )}
       <div
         onClick={handleOpen}
-        className= {`${open && "absolute"} fixed z-50 right-5 top-5 bg-gray-50/50 p-4 text-2xl cursor-pointer drop-shadow-xl`}
+        className= {` bg-gray-50/50 p-4`}
       >
         {open ? <FiX /> : <FiMenu />}
+      </div>
       </div>
       <AnimatePresence>
       { open && (

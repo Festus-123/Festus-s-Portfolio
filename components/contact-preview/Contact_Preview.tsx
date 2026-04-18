@@ -55,7 +55,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
       }}
       className=""
     >
-      <div className="flex flex-col bg-gray-50/60">
+      <div className="flex flex-col bg-gray-50/90">
       <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-20 lg:gap-30 p-2 md:p-8 lg:p-12">
         <h1
           className={`text-7xl md:text-8xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${changaOne.className}`}
@@ -109,7 +109,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
           </button>
         </form>
       </div>
-        <div className="w-full flex flex-row items-center justify-evenly text-2xl p-2 md:p-8">
+        <div className="w-full flex flex-row items-center justify-evenly text-2xl p-6 md:p-8">
           {contacts.map((item, index) => {
             const Icon = item.icon;
 

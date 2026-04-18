@@ -4,6 +4,7 @@ import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 // import { experiences } from "@/data/experience";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { FiTarget } from "react-icons/fi";
 import Stories from "../stories/Stories";
 
 const About_Me = () => {
@@ -45,7 +46,7 @@ const About_Me = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.8 }}
         style={{ y: translateContent }}
-        className="bg-gray-50/60 w-full h-full p-8 md:p-16 flex flex-col gap-20"
+        className="bg-gray-50 w-full h-full p-8 md:p-16 flex flex-col gap-20"
       >
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-40">
           <p className="w-full font-light text-justify text-lg md:text-2xl leading-relaxed">
@@ -93,7 +94,45 @@ const About_Me = () => {
         {/* <div className="p-16"></div> */}
       </motion.section>
 
-      {/* <Stories /> */}
+      {/* <Experience/> */}
+      <motion.div
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8 }}
+        style={{ y: translateContent }}
+        className="bg-white text-white">
+          <motion.div
+            className="bg-black/90 px-4 pt-4 md:pt-8 md:px-8">
+              <h1 className="text-balance text-4xl md:text-7xl font-extrabold border-b border-gray-300 pb-8">
+                Experience 5+
+              </h1>
+
+            {/* Experiences */}
+              <div className="text-4xl md:text-6xl font-extrabold text-white/80 mt-15 flex flex-col gap-10 text-right tracking-wide">
+                <h2 className="border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+                  Internship at Deejoft 
+                </h2>
+                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+                  Senior Developer at Phipest-bens
+                </h2>
+                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+                  C.E.O & Founder of DebateX
+                </h2>
+                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+                  C.E.O & Founder of Chat-space
+                </h2>
+                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+                  Brains behind MeXn
+                </h2>
+                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+                  50+ Freelance Projects
+                </h2>
+
+              </div>
+
+          </motion.div>
+
+      </motion.div>
 
     </div>
   );

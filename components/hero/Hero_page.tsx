@@ -68,7 +68,7 @@ const HeroPage = () => {
         }}
         className="relative h-full w-full rounded-t-2xl z-10"
       >
-        <div className="absolute top-0 left-0 w-full h-full bg-black/5"></div>
+        {/* <div className="absolute top-0 left-0 w-full h-full bg-gray-50/40"></div> */}
 
         <div className={`relative p-8 w-full mt-5 ${changaOne.className}`} >
           <motion.h2
@@ -82,10 +82,10 @@ const HeroPage = () => {
         </div>
 
         {/* Abotu Preview */}
-        <motion.div style={{y: contentTranslateY}} className="relative mt-40">
+        <motion.div style={{y: contentTranslateY}} className="relative mt-40 ">
             <motion.div
                 style={{y: raceHello}}
-                className=" p-4 text-3xl md:text-6xl text-gray-200 font-bold drop-shadow-lg ">
+                className=" p-4 text-3xl md:text-6xl text-gray-400 font-bold drop-shadow-lg z-40">
                 👋{''}🏃‍♀️...
             </motion.div>
           <About_Preview />
@@ -102,7 +102,7 @@ const HeroPage = () => {
         {/* We should work together */}
         <motion.div
           // style={{ y: contnetDescribeTranslateY }}
-          className={`p-4 md:p-8`}>
+          className={`p-4 md:p-8 relative`}>
           <motion.h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-950 text-center leading-relaxed mb-20">
             {/* WANT TO BUILD A USER FRIENDLY WEBSITE LET&apos;S BUILD TOGEHTER!!! */}
             {/* WANT TO BUILD A RESPONSIVE USER FRIENDLY WEBSITE 👇👇 */}

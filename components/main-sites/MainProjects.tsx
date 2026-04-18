@@ -43,8 +43,10 @@ const Projects = () => {
       </motion.h1>
 
       {/* PROJECT CONTAINER */}
-      <motion.div
+      <motion.div 
         style={{ y: containerY }}
+        className="bg-white">
+      <motion.div
         className="bg-black/90 text-amber-50 z-10"
       >
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 p-4 md:p-12">
@@ -85,6 +87,8 @@ const Projects = () => {
           ))}
         </div>
       </motion.div>
+      </motion.div>
+
 
       {/* Loading */}
       <div className="py-24">
