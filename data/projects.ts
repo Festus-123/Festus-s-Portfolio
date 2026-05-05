@@ -43,17 +43,17 @@ export const links: Project[] = [
     description:
       "Password Generator is a utility app that creates strong, random passwords with customizable length and complexity. It has a clean interface and fast performance, demonstrating practical React skills and a focus on user-friendly design.",
   },
-  {
-    slug: "movie-app",
-    name: "Movie App Main",
-    image: "/movie-app.png",
-    site: "https://movie-app-delta-sand.vercel.app/",
-    github_site: "https://github.com/Festus-123/Movie-app",
-    github: "/github.jpg",
-    stacks: ["React.js", "JavaScript", "TMDB API", "Firebase", "Tailwind CSS", "Responsive UI"],
-    description:
-      "Movie App Main is a movie discovery app using TMDB API. Users can browse trending movies, search titles, and view detailed info while also being able to watch a short image stram of the movie. Firebase powers additional features and Tailwind CSS ensures responsive, modern design.",
-  },
+  // {
+  //   slug: "movie-app",
+  //   name: "Movie App Main",
+  //   image: "/movie-app.png",
+  //   site: "https://movie-app-delta-sand.vercel.app/",
+  //   github_site: "https://github.com/Festus-123/Movie-app",
+  //   github: "/github.jpg",
+  //   stacks: ["React.js", "JavaScript", "TMDB API", "Firebase", "Tailwind CSS", "Responsive UI"],
+  //   description:
+  //     "Movie App Main is a movie discovery app using TMDB API. Users can browse trending movies, search titles, and view detailed info while also being able to watch a short image stram of the movie. Firebase powers additional features and Tailwind CSS ensures responsive, modern design.",
+  // },
   {
     slug: "collecta-nft",
     name: "Collecta NFT",
@@ -108,5 +108,16 @@ export const links: Project[] = [
     stacks: ["Next.js", "TypeScript", "GSAP", "Tailwind CSS", "Responsive UI", "Supabase"],
     description:
       "DebateX a startup project by Festus Philli to host Live debates accross the globe with interesting figures and occurence, A place where -Everyone is the Judge, -EveryOne is heard, -Every Opinion matters, -Questions are asked, -Where people grow more in the digital world. DebateX brings about connectivity and communication espite ifferent region race and time zone, it also bring about Reconcepting Misconception",
+  },
+  {
+    slug: "photographer",
+    name: "Photographer",
+    image: "/photgrapher.png",
+    site: "https://celeb-portfolio-sandy.vercel.app/",
+    github_site: "https://github.com/Festus-123/celeb-portfolio",
+    github: "/github.jpg",
+    stacks: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive UI", ],
+    description:
+      "A stunning website that showcase the work of a profesional celebrity photgrapher, capturing their moments and displaying it in a clean structure and format. A photographer with the saying diamond in the rough with a website that speaks the volume. --An artwork made by code",
   },
 ];

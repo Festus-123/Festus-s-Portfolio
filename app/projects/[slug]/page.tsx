@@ -43,7 +43,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             </p>
           ))}
         </div>
-        <div className="flex md:flex-row flex-col-reverse gap-20 md:gap-10 ">
+        <div className="flex md:flex-row-reverse flex-col-reverse gap-20 md:gap-10 ">
           <div className="w-full md:w-[50%] p-4 md:p-8">
             <h1 className="font-light tracking-wide text-xl md:text-2xl text-justify leading-relaxed">
               {project.description}

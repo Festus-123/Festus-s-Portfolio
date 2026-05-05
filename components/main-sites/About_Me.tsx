@@ -100,7 +100,7 @@ const About_Me = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.8 }}
         style={{ y: translateContent }}
-        className="bg-white text-white">
+        className="bg-white text-white hidden">
           <motion.div
             className="bg-black/90 px-4 pt-4 md:pt-8 md:px-8">
               <h1 className="text-balance text-4xl md:text-7xl font-extrabold border-b border-gray-300 pb-8">
