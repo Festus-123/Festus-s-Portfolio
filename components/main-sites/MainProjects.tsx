@@ -36,7 +36,7 @@ const Projects = () => {
       {/* PROJECT TITLE */}
       <motion.h1
         style={{ y: titleY }}
-        className={`relative text-center font-extrabold text-6xl sm:text-8xl md:text-9xl text-amber-950 mb-5`}
+        className={`relative text-center font-extrabold text-[4em] sm:text-[9em] md:text-[12em] text-[#49332a] mb-5`}
       >
         PROJECTS
       </motion.h1>

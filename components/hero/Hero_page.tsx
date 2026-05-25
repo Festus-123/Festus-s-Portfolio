@@ -3,13 +3,13 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
-  Changa_One,
+  Changa_One
 } from "next/font/google";
 
 import About_Preview from "../about-preview/About_Preview";
 import Project_Preview from "../project-preview/Project_Preview";
 
-const changaOne = Changa_One({
+export const changaOne = Changa_One({
   weight: "400",
   subsets: ["latin"],
 });
@@ -24,7 +24,7 @@ const HeroPage = () => {
 
   // Next section fades in and slides up
   const contentOpacity = useTransform(scrollY, [150, 300], [0.1, 1]);
-    const contentTranslateY = useTransform(scrollY, [600, 800], [-50, -320]);
+    const contentTranslateY = useTransform(scrollY, [600, 800], [-50, -220]);
     const raceHello = useTransform(scrollY, [400, 800], [-60, 50])
 
   return (
@@ -72,12 +72,12 @@ const HeroPage = () => {
 
         <div className={`relative p-8 w-full mt-5 ${changaOne.className}`} >
           <motion.h2
-            className="text-6xl sm:text-7xl md:text-8xl lg:tex-9xl font- leading-none md:leading-none text-amber-950 font-style"
+            className="text-[3em] sm:text-[5em] md:text-[9em] lg:text-[14em] font- leading-none  text-[#49332a] font-style"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
-            FRONTEND {' '} ENGINEER 
+            FRONTEND {' '} DEVELOPER 
           </motion.h2>
         </div>
 
@@ -103,7 +103,7 @@ const HeroPage = () => {
         <motion.div
           // style={{ y: contnetDescribeTranslateY }}
           className={`p-4 md:p-8 relative`}>
-          <motion.h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-950 text-center leading-relaxed mb-20">
+          <motion.h1 className="uppercase text-3xl md:text-5xl lg:text-7xl font-extrabold text-[#49332a] text-center leading-relaxed mb-20">
             {/* WANT TO BUILD A USER FRIENDLY WEBSITE LET&apos;S BUILD TOGEHTER!!! */}
             {/* WANT TO BUILD A RESPONSIVE USER FRIENDLY WEBSITE 👇👇 */}
             Want To Build A Responsive User Friendly Website 👇👇

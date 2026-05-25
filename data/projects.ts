@@ -121,7 +121,7 @@ export const links: Project[] = [
       "A stunning website that showcase the work of a profesional celebrity photgrapher, capturing their moments and displaying it in a clean structure and format. A photographer with the saying diamond in the rough with a website that speaks the volume. --An artwork made by code",
   },
   {
-    slug: "weslime-auto repair",
+    slug: "weslime-auto-repair",
     name: "Weslime Auto Repair",
     image: "/weslime.png",
     site: "https://weslim.vercel.app/",
@@ -151,7 +151,7 @@ export const links: Project[] = [
     github: "/github.jpg",
     stacks: ["React.js", "TypeScript", "Tailwind CSS", "Responsive UI", "sonner"],
     description:
-      "A modern website for a cooking blog, featuring a collection of delicious recipes and cooking tips. The site has a clean and intuitive design, making it easy for users to find and share their favorite dishes."
+      "A modern website for a restaurant, featuring a collection of delicious recipes and cooking tips. The site has a clean and responsive design, making it easy for users to find and view their favorite dishes."
   },
   {
     slug: "musk-hotel",

@@ -6,6 +6,7 @@ import { links } from "@/data/projects";
 
 // import Project_container from "../project-container/Project_container";
 import { motion, useTransform, useScroll } from "framer-motion";
+import Image from "next/image";
 
 const Project_Preview = () => {
   const { scrollY } = useScroll();
@@ -18,16 +19,12 @@ const Project_Preview = () => {
     <div className="flex flex-col gap-20 items-center">
       <motion.h1
         style={{ y: projectTranslateY }}
-        className=" text-center font-extrabold text-3xl sm:text-24l md:text-6xl text-amber-950"
+        className=" text-center font-extrabold text-3xl sm:text-24l md:text-6xl text-[#49332a]"
       >
         RECENT PROJECTS
       </motion.h1>
-      <motion.div 
-        style={{ y: projectOverTitle }}
-        className="bg-white">
-        <motion.div
-          className="bg-black/90 text-white/80 flex flex-col items-end"
-        >
+      <motion.div style={{ y: projectOverTitle }} className="bg-white">
+        <motion.div className="bg-black/90 text-white/80 flex flex-col items-end">
           {/* <h1 className="w-full font-bold text-2xl md:text-4xl text-white/90 text-center py-4 md:py-0">Recents Works</h1> */}
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-30 md:gap-20 z-20 px-2 py-8 md:p-12">
             {links.slice(0, 2).map((item, index) => (
@@ -37,7 +34,14 @@ const Project_Preview = () => {
                     href={`/projects/${item.slug}`}
                     className="absolute w-full h-full cursor-pointer z-10"
                   />
-                  <img src={item.image} className="" />
+                  <Image
+                    loading="lazy"
+                    src={item.image}
+                    alt="project preview image"
+                    width={700}
+                    height={500}
+                    className=""
+                  />
                 </div>
                 <div className="w-full flex flex-row items-center justify-between border-b pb-2">
                   <h1 className="font-bold text-lg md:text-xl">{item.name}</h1>
@@ -49,10 +53,13 @@ const Project_Preview = () => {
                     )}
                     {item.github_site && (
                       <Link href={item.github_site}>
-                        <img
-                          className="w-5 h-5 rounded-full"
+                        <Image
+                          loading="lazy"
                           src={item.github}
                           alt="GitHub"
+                          width={25}
+                          height={25}
+                          className="w-5 h-5 rounded-full"
                         />
                       </Link>
                     )}

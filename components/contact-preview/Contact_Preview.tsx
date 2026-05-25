@@ -58,7 +58,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
       <div className="flex flex-col bg-gray-50/90">
       <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-20 lg:gap-30 p-2 md:p-8 lg:p-12">
         <h1
-          className={`text-7xl md:text-8xl lg:text-9xl font-extrabold text-amber-950 md:leading-40 ${changaOne.className}`}
+          className={`text-[4em] md:text-[7em] lg:text-[9em] font-extrabold text-[#49332a] md:leading-40 ${changaOne.className}`}
         >
           GET <br /> IN <br /> TOUCH
         </h1>

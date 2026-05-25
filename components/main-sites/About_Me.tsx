@@ -1,7 +1,7 @@
 "use client";
 // import Image from "next/image";
 import React from "react";
-import { FiCheckCircle } from "react-icons/fi";
+import { FiCheckCircle, FiArrowRight } from "react-icons/fi";
 // import { experiences } from "@/data/experience";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
@@ -21,17 +21,17 @@ const About_Me = () => {
       }}
       className="w-full h-full relative"
     >
-        <div className="absolute top-0 left-0 w-full h-full bg-gray-50/60"></div>
-        {/* Name section and active */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gray-50/60"></div>
+      {/* Name section and active */}
       <motion.section
         style={{ opacity: translateTitleOpacity }}
         className="z-10 sticky top-5 w-full flex flex-col md:flex-row items-center gap-10 p-8 md:p-16"
       >
-        <div className="flex flex-col items-center md:items-start">
-          <h1 className="text-3xl md:text-6xl font-extrabold text-amber-950 text-center">
+        <div className={`flex flex-col items-center md:items-start text-[#49332a]`}>
+          <h1 className="text-[2em] md:text-[6em] font-extrabold text-center">
             FESTUS PHILLIP A.
           </h1>
-          <p className="text-amber-950 text-lg md:text-xl font-medium flex flex-col items-center md:items-start">
+          <p className=" text-lg md:text-xl font-medium flex flex-col items-center md:items-start">
             <span>A Frontend Web Developer</span>
 
             <span className="flex items-center gap-4 text-center">
@@ -97,6 +97,13 @@ const About_Me = () => {
         </p>
         {/* Album */}
         {/* <div className="p-16"></div> */}
+        <h1 className="font-extrabold text-2xl text-[#49332a] uppercase flex items-center gap-2 cursor-pointer w-fit">
+          <span>View resume</span>
+          <span className="text-4xl">
+            {" "}
+            <FiArrowRight />{" "}
+          </span>
+        </h1>
       </motion.section>
 
       {/* <Experience/> */}
@@ -105,40 +112,36 @@ const About_Me = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.8 }}
         style={{ y: translateContent }}
-        className="bg-white text-white hidden">
-          <motion.div
-            className="bg-black/90 px-4 pt-4 md:pt-8 md:px-8">
-              <h1 className="text-balance text-4xl md:text-7xl font-extrabold border-b border-gray-300 pb-8">
-                Experience 5+
-              </h1>
+        className="bg-white text-white hidden"
+      >
+        <motion.div className="bg-black/90 px-4 pt-4 md:pt-8 md:px-8">
+          <h1 className="text-balance text-4xl md:text-7xl font-extrabold border-b border-gray-300 pb-8">
+            Experience 5+
+          </h1>
 
-            {/* Experiences */}
-              <div className="text-4xl md:text-6xl font-extrabold text-white/80 mt-15 flex flex-col gap-10 text-right tracking-wide">
-                <h2 className="border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
-                  Internship at Deejoft 
-                </h2>
-                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
-                  Senior Developer at Phipest-bens
-                </h2>
-                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
-                  C.E.O & Founder of DebateX
-                </h2>
-                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
-                  C.E.O & Founder of Chat-space
-                </h2>
-                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
-                  Brains behind MeXn
-                </h2>
-                <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
-                  50+ Freelance Projects
-                </h2>
-
-              </div>
-
-          </motion.div>
-
+          {/* Experiences */}
+          <div className="text-4xl md:text-6xl font-extrabold text-white/80 mt-15 flex flex-col gap-10 text-right tracking-wide">
+            <h2 className="border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+              Internship at Deejoft
+            </h2>
+            <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+              Senior Developer at Phipest-bens
+            </h2>
+            <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+              C.E.O & Founder of DebateX
+            </h2>
+            <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+              C.E.O & Founder of Chat-space
+            </h2>
+            <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+              Brains behind MeXn
+            </h2>
+            <h2 className=" border-b border-gray-400/20 pb-8 md:pb-12 px-4 md:px-8">
+              50+ Freelance Projects
+            </h2>
+          </div>
+        </motion.div>
       </motion.div>
-
     </div>
   );
 };

@@ -60,6 +60,7 @@ const Sidebar = () => {
           {links.map((item, index) => (
             <motion.div 
                 whileHover={{ x: -40}}
+                animate={{ x: 0}}
                 transition={{ duration: 0.2, ease: "easeInOut"}}
                 style={{}} key={index}>
               <Link
