@@ -4,12 +4,13 @@ import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 // import { experiences } from "@/data/experience";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FiTarget } from "react-icons/fi";
-import Stories from "../stories/Stories";
+import Image from "next/image";
+// import { FiTarget } from "react-icons/fi";
+// import Stories from "../stories/Stories";
 
 const About_Me = () => {
   const { scrollY } = useScroll();
-  const translateTitle = useTransform(scrollY, [0, 400], [0, 300]);
+  // const translateTitle = useTransform(scrollY, [0, 400], [0, 300]);
   const translateTitleOpacity = useTransform(scrollY, [0, 150], [1, 0]);
   const translateContent = useTransform(scrollY, [0, 400], [0, -300]);
   return (
@@ -20,10 +21,11 @@ const About_Me = () => {
       }}
       className="w-full h-full relative"
     >
+        <div className="absolute top-0 left-0 w-full h-full bg-gray-50/60"></div>
         {/* Name section and active */}
       <motion.section
         style={{ opacity: translateTitleOpacity }}
-        className=" sticky top-5 w-full flex flex-col md:flex-row items-center gap-10 p-8 md:p-16"
+        className="z-10 sticky top-5 w-full flex flex-col md:flex-row items-center gap-10 p-8 md:p-16"
       >
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-3xl md:text-6xl font-extrabold text-amber-950 text-center">
@@ -46,7 +48,7 @@ const About_Me = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.8 }}
         style={{ y: translateContent }}
-        className="bg-gray-50 w-full h-full p-8 md:p-16 flex flex-col gap-20"
+        className="relative bg-gray-50 w-full h-full p-8 md:p-16 flex flex-col gap-20"
       >
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-40">
           <p className="w-full font-light text-justify text-lg md:text-2xl leading-relaxed">
@@ -64,10 +66,13 @@ const About_Me = () => {
             I enjoy turning ideas into working systems and continuously pushing
             myself to grow as a developer.
           </p>
-          <div className="w-[90%] bg-white drop-shadow-2xl p-4">
-            <img
+          <div className="w-[90%] drop-shadow-xl bg-white p-4">
+            <Image
+              priority
               src={"/festus.jpg"}
               alt="festus"
+              width={400}
+              height={400}
               className="w-full h-80 md:h-110 object-cover"
             />
           </div>

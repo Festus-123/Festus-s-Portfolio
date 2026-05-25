@@ -2,7 +2,7 @@
 
 import { FiSend } from "react-icons/fi";
 import { useState } from "react";
-import { Changa_One, Erica_One } from "next/font/google";
+import { Changa_One } from "next/font/google";
 import { toast } from "sonner";
 import contacts from "@/data/contact";
 
@@ -12,7 +12,7 @@ const changaOne = Changa_One({
 });
 
 const Contact_Preview = () => {
-  const [loading, setLoading] = useState<boolean>(false)
+  const [loading, setLoading] = useState<boolean>(false);
 
 const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
   e.preventDefault();

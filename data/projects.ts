@@ -110,14 +110,58 @@ export const links: Project[] = [
       "DebateX a startup project by Festus Philli to host Live debates accross the globe with interesting figures and occurence, A place where -Everyone is the Judge, -EveryOne is heard, -Every Opinion matters, -Questions are asked, -Where people grow more in the digital world. DebateX brings about connectivity and communication espite ifferent region race and time zone, it also bring about Reconcepting Misconception",
   },
   {
-    slug: "photographer",
-    name: "Photographer",
+    slug: "photographer-portfolio",
+    name: "Photographer Portfolio",
     image: "/photgrapher.png",
     site: "https://celeb-portfolio-sandy.vercel.app/",
     github_site: "https://github.com/Festus-123/celeb-portfolio",
     github: "/github.jpg",
-    stacks: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive UI", ],
+    stacks: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive UI", "Masonry.JS"],
     description:
       "A stunning website that showcase the work of a profesional celebrity photgrapher, capturing their moments and displaying it in a clean structure and format. A photographer with the saying diamond in the rough with a website that speaks the volume. --An artwork made by code",
   },
+  {
+    slug: "weslime-auto repair",
+    name: "Weslime Auto Repair",
+    image: "/weslime.png",
+    site: "https://weslim.vercel.app/",
+    github_site: "https://github.com/Festus-123/weslime", 
+    github: "/github.jpg",
+    stacks: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive UI", "Sonner"],
+    description:
+      "Weslime auto repairs specialises in car repais, car wash, car part sales and other car related services. The website was made to help the company create an online presence and also to make it easy for customers to make enquiry and book appointments with the company. It also has a clean and responsive design that makes it easy for users to navigate and find the information they need.",
+  },
+  {
+    slug: "indian-restaurant",
+    name: "Indian Restaurant",
+    image: "/indian-restaurant.png",
+    site: "https://indian-resturant.vercel.app/",
+    github_site: "https://github.com/Festus-123/indian-restaurant",
+    github: "/github.jpg",
+    stacks: ["React.js", "TypeScript", "Tailwind CSS", "Responsive UI", "sonner"],
+    description:
+      "An elegant website for an Indian restaurant, showcasing their menu, location, and contact information. The site features a modern design with smooth animations and a responsive layout for an optimal user experience. Giving the pleasant view of the restaurant epic delicacies",
+  },
+  {
+    slug: "coolchef-nationwide-eats",
+    name: "CoolChef Nationwide Eats",
+    image: "/coolchef.png",
+    site: "https://coolchef-nationwide-eats.vercel.app/",
+    github_site: "https://github.com/Festus-123/coolchef-nationwide-eats",
+    github: "/github.jpg",
+    stacks: ["React.js", "TypeScript", "Tailwind CSS", "Responsive UI", "sonner"],
+    description:
+      "A modern website for a cooking blog, featuring a collection of delicious recipes and cooking tips. The site has a clean and intuitive design, making it easy for users to find and share their favorite dishes."
+  },
+  {
+    slug: "musk-hotel",
+    name: "Musk Hotel",
+    image: "/musk-hotel.png",
+    site: "https://musk-hotel.vercel.app/",
+    github_site: "https://github.com/Festus-123/musk-hotel",
+    github: "/github.jpg",
+    stacks: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive UI", "sonner", "Swiper.Js"],
+    description:
+      "A modern website for a hotel, featuring a collection of room options and booking services. The site has a clean and intuitive design, making it easy for users to find and reserve their ideal stay."
+  }
 ];

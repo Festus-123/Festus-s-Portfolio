@@ -66,9 +66,9 @@ const HeroPage = () => {
           backgroundImage: "url(/white-paper.jpg)",
           backgroundAttachment: "fixed",
         }}
-        className="relative h-full w-full rounded-t-2xl z-10"
+        className="relative h-full w-full z-10"
       >
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-gray-50/40"></div> */}
+        <div className="absolute top-0 left-0 w-full h-full bg-gray-50/60"></div>
 
         <div className={`relative p-8 w-full mt-5 ${changaOne.className}`} >
           <motion.h2
