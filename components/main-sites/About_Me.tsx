@@ -5,8 +5,15 @@ import { FiCheckCircle, FiArrowRight } from "react-icons/fi";
 // import { experiences } from "@/data/experience";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import { Changa_One } from "next/font/google";
 // import { FiTarget } from "react-icons/fi";
 // import Stories from "../stories/Stories";
+
+
+export const changaOne = Changa_One({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const About_Me = () => {
   const { scrollY } = useScroll();
@@ -28,7 +35,7 @@ const About_Me = () => {
         className="z-10 sticky top-5 w-full flex flex-col md:flex-row items-center gap-10 p-8 md:p-16"
       >
         <div className={`flex flex-col items-center md:items-start text-[#49332a]`}>
-          <h1 className="text-[2em] md:text-[6em] font-extrabold text-center">
+          <h1 className={`text-[2em] md:text-[6em] font-extrabold text-center ${changaOne.className}`}>
             FESTUS PHILLIP A.
           </h1>
           <p className=" text-lg md:text-xl font-medium flex flex-col items-center md:items-start">
@@ -97,13 +104,17 @@ const About_Me = () => {
         </p>
         {/* Album */}
         {/* <div className="p-16"></div> */}
-        <h1 className="font-extrabold text-2xl text-[#49332a] uppercase flex items-center gap-2 cursor-pointer w-fit">
+        <a
+          href="https://drive.google.com/file/d/1TVMUCl-87MpxEpfWkhQ_oLjU5XwdR_RY/view?usp=sharing" 
+          target="_blank"
+          rel="noopeener noreferrer"
+          className="font-extrabold text-2xl text-[#49332a] uppercase flex items-center gap-2 cursor-pointer ">
           <span>View resume</span>
           <span className="text-4xl">
             {" "}
             <FiArrowRight />{" "}
           </span>
-        </h1>
+        </a>
       </motion.section>
 
       {/* <Experience/> */}

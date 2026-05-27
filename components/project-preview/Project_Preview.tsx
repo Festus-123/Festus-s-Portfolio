@@ -3,10 +3,18 @@ import React from "react";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { links } from "@/data/projects";
+import { Changa_One } from "next/font/google";
+
 
 // import Project_container from "../project-container/Project_container";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Image from "next/image";
+
+
+export const changaOne = Changa_One({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const Project_Preview = () => {
   const { scrollY } = useScroll();
@@ -19,7 +27,7 @@ const Project_Preview = () => {
     <div className="flex flex-col gap-20 items-center">
       <motion.h1
         style={{ y: projectTranslateY }}
-        className=" text-center font-extrabold text-3xl sm:text-24l md:text-6xl text-[#49332a]"
+        className={`text-center font-extrabold text-3xl sm:text-24l md:text-6xl text-[#49332a] ${changaOne.className}`}
       >
         RECENT PROJECTS
       </motion.h1>

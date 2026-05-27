@@ -4,15 +4,15 @@ import React from "react";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { motion, useScroll, useTransform } from "framer-motion";
-// import { Changa_One } from "next/font/google";
+import { Changa_One } from "next/font/google";
 import { links } from "@/data/projects";
 import Image from "next/image";
 // import { Project as type } from "@/data/projects";
 
-// const changaOne = Changa_One({
-//   weight: "400",
-//   subsets: ["latin"]
-// })
+const changaOne = Changa_One({
+  weight: "400",
+  subsets: ["latin"]
+})
 
 const Projects = () => {
   const { scrollY } = useScroll();
@@ -36,7 +36,7 @@ const Projects = () => {
       {/* PROJECT TITLE */}
       <motion.h1
         style={{ y: titleY }}
-        className={`relative text-center font-extrabold text-[4em] sm:text-[9em] md:text-[12em] text-[#49332a] mb-5`}
+        className={`relative text-center font-extrabold text-[4em] sm:text-[9em] md:text-[12em] text-[#49332a] mb-5 ${changaOne.className}`}
       >
         PROJECTS
       </motion.h1>
