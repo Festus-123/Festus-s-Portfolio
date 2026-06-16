@@ -67,7 +67,7 @@ const About_Me = () => {
             like React, Next.js and React Native, using them to develop
             responsive web applications, interactive interfaces, and practical
             solutions to real-world problems. <br /> <br />
-            With over 3 years of experience, I’ve worked on a variety of
+            With over 5 years of experience, I’ve worked on a variety of
             projects—from simple tools to more structured
             applications—constantly refining my skills and attention to detail.
             I enjoy turning ideas into working systems and continuously pushing
