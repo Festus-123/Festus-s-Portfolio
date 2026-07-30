@@ -24,11 +24,11 @@ export const links: Project[] = [
   {
     slug: "mkclothing",
     name: "M & K Clothing",
-    image: "/mk-clothing2.png",
+    image: "/mk-clothing3.png",
     site: "https://mkclothing-kna2.vercel.app/",
     github_site: "https://github.com/Festus-123/mkclothing",
     github: "/github.jpg",
-    stacks: ["React.js", "JavaScript", "Supabase", "Tailwind CSS", "Responsive Design", "Dynamic UI", "framer motion", "Toaster"],
+    stacks: ["React.js", "JavaScript", "Supabase", "Tailwind CSS", "Responsive Design", "Dynamic UI", "framer motion", "Toaster", "Render",],
     description:
       "M & K Clothing is a fully responsive e-commerce web app showcasing clothing collections. It integrates Supabase for dynamic content, smooth browsing, and modern UI interactions, delivering a polished shopping experience. '  ' Building it dashboard making it neatly functional for adding, deleting and editing clothe products and collections",
   },

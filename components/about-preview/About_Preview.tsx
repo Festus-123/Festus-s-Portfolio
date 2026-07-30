@@ -18,7 +18,7 @@ const About_Preview = () => {
               Hi, I&apos;m Festus,
             </span>{" "}
             a 300 level Computer Science student at OAUSTECH with a current
-            First Class CGPA of 4.61. With over 5 years experience, I&apos;ve
+            First Class CGPA of 4.61. With over  years experience, I&apos;ve
             been working as a software developer,
             mainly focusing on JavaScript technologies to build websites, mobile
             applications, and interactive simulations. <br /> <br />I have
