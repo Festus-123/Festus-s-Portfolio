@@ -90,7 +90,7 @@ export const links: Project[] = [
   {
     slug: "phipest-bens",
     name: "Phipest-Bens Int Nig Ltd.",
-    image: "/phipest-bens.png",
+    image: "/phipest-bens2.png",
     site: "https://phipest-bens.vercel.app/",
     github_site: "https://github.com/Festus-123/phipest-bens",
     github: "/github.jpg",
