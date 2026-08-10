@@ -28,65 +28,10 @@ export const links: Project[] = [
     site: "https://mkclothing-kna2.vercel.app/",
     github_site: "https://github.com/Festus-123/mkclothing",
     github: "/github.jpg",
-    stacks: ["React.js", "JavaScript", "Supabase", "Tailwind CSS", "Responsive Design", "Dynamic UI", "framer motion", "Toaster", "Render",],
+    stacks: ["React", "JavaScript", "Supabase", "Tailwind CSS", "Responsive Design", "Dynamic UI", "framer motion", "sonner", "Render",],
     description:
       "M & K Clothing is a fully responsive e-commerce web app showcasing clothing collections. It integrates Supabase for dynamic content, smooth browsing, and modern UI interactions, delivering a polished shopping experience. '  ' Building it dashboard making it neatly functional for adding, deleting and editing clothe products and collections",
   },
-  // {
-  //   slug: "password-gen",
-  //   name: "Password Generator",
-  //   image: "/password-gen.png",
-  //   site: "https://password-generator-mauve-zeta.vercel.app/",
-  //   github_site: "https://github.com/Festus-123/Password-Generator",
-  //   github: "/github.jpg",
-  //   stacks: ["React.js", "Typescript", "tailwindCSS", "CSS3", "Responsive UI"],
-  //   description:
-  //     "Password Generator is a utility app that creates strong, random passwords with customizable length and complexity. It has a clean interface and fast performance, demonstrating practical React skills and a focus on user-friendly design.",
-  // },
-  // {
-  //   slug: "movie-app",
-  //   name: "Movie App Main",
-  //   image: "/movie-app.png",
-  //   site: "https://movie-app-delta-sand.vercel.app/",
-  //   github_site: "https://github.com/Festus-123/Movie-app",
-  //   github: "/github.jpg",
-  //   stacks: ["React.js", "JavaScript", "TMDB API", "Firebase", "Tailwind CSS", "Responsive UI"],
-  //   description:
-  //     "Movie App Main is a movie discovery app using TMDB API. Users can browse trending movies, search titles, and view detailed info while also being able to watch a short image stram of the movie. Firebase powers additional features and Tailwind CSS ensures responsive, modern design.",
-  // },
-  // {
-  //   slug: "collecta-nft",
-  //   name: "Collecta NFT",
-  //   image: "/collecta-nft.png",
-  //   site: "https://collecta-nfts.vercel.app/",
-  //   github_site: "https://github.com/Festus-123/Collecta-nfts",
-  //   github: "/github.jpg",
-  //   stacks: ["React.js", "JavaScript", "tailwindCss", "Responsive UI"],
-  //   description:
-  //     "Collecta NFT is an interactive showcase for NFT artworks and digital collectibles, featuring responsive layouts and engaging animations for smooth browsing and presentation. focuses mainly on the look and feel not interactions",
-  // },
-  // {
-  //   slug: "virtual-robot",
-  //   name: "Virtual Robot",
-  //   image: "/virtual-robot.png",
-  //   site: "https://virtual-robot-gold.vercel.app/",
-  //   github_site: "https://github.com/Festus-123/virtual-robot",
-  //   github: "/github.jpg",
-  //   stacks: ["React.js", "JavaScript", "Three.js", "Tailwind CSS", "Canvas Animations"],
-  //   description:
-  //     "Virtual Robot is an interactive 3D simulation using Three.js and React. It demonstrates advanced animations, motion controls, and immersive graphics directly in the browser.",
-  // },
-  // {
-  //   slug: "ciera-fi",
-  //   name: "Ciera-Fi",
-  //   image: "/ciera-fi.png",
-  //   site: "https://ciera-fi.vercel.app/",
-  //   github_site: "https://github.com/Festus-123/Ciera-Fi",
-  //   github: "/github.jpg",
-  //   stacks: ["React.js", "JavaScript", "Framer Motion", "Tailwind CSS", "Responsive UIs"],
-  //   description:
-  //     "Ciera-Fi is a dynamic interactive web app showcasing advanced frontend animations with Framer Motion. It combines smooth transitions with responsive layouts for an engaging user experience.",
-  // },
   {
     slug: "phipest-bens",
     name: "Phipest-Bens Int Nig Ltd.",
@@ -109,17 +54,6 @@ export const links: Project[] = [
     description:
       "DebateX a startup project by Festus Philli to host Live debates accross the globe with interesting figures and occurence, A place where -Everyone is the Judge, -EveryOne is heard, -Every Opinion matters, -Questions are asked, -Where people grow more in the digital world. DebateX brings about connectivity and communication espite ifferent region race and time zone, it also bring about Reconcepting Misconception",
   },
-  // {
-  //   slug: "photographer-portfolio",
-  //   name: "Photographer Portfolio",
-  //   image: "/photgrapher.png",
-  //   site: "https://celeb-portfolio-sandy.vercel.app/",
-  //   github_site: "https://github.com/Festus-123/celeb-portfolio",
-  //   github: "/github.jpg",
-  //   stacks: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive UI", "Masonry.JS"],
-  //   description:
-  //     "A stunning website that showcase the work of a profesional celebrity photgrapher, capturing their moments and displaying it in a clean structure and format. A photographer with the saying diamond in the rough with a website that speaks the volume. --An artwork made by code",
-  // },
   {
     slug: "weslime-auto-repair",
     name: "Weslime Auto Repair",
@@ -131,17 +65,6 @@ export const links: Project[] = [
     description:
       "Weslime auto repairs specialises in car repais, car wash, car part sales and other car related services. The website was made to help the company create an online presence and also to make it easy for customers to make enquiry and book appointments with the company. It also has a clean and responsive design that makes it easy for users to navigate and find the information they need.",
   },
-  // {
-  //   slug: "indian-restaurant",
-  //   name: "Indian Restaurant",
-  //   image: "/indian-restaurant.png",
-  //   site: "https://indian-resturant.vercel.app/",
-  //   github_site: "https://github.com/Festus-123/indian-restaurant",
-  //   github: "/github.jpg",
-  //   stacks: ["React.js", "TypeScript", "Tailwind CSS", "Responsive UI", "sonner"],
-  //   description:
-  //     "An elegant website for an Indian restaurant, showcasing their menu, location, and contact information. The site features a modern design with smooth animations and a responsive layout for an optimal user experience. Giving the pleasant view of the restaurant epic delicacies",
-  // },
   {
     slug: "coolchef-nationwide-eats",
     name: "CoolChef Nationwide Eats",
@@ -153,15 +76,15 @@ export const links: Project[] = [
     description:
       "A modern website for a restaurant, featuring a collection of delicious recipes and cooking tips. The site has a clean and responsive design, making it easy for users to find and view their favorite dishes."
   },
-  // {
-  //   slug: "musk-hotel",
-  //   name: "Musk Hotel",
-  //   image: "/musk-hotel.png",
-  //   site: "https://musk-hotel.vercel.app/",
-  //   github_site: "https://github.com/Festus-123/musk-hotel",
-  //   github: "/github.jpg",
-  //   stacks: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive UI", "sonner", "Swiper.Js"],
-  //   description:
-  //     "A modern website for a hotel, featuring a collection of room options and booking services. The site has a clean and intuitive design, making it easy for users to find and reserve their ideal stay."
-  // }
+  {
+    slug: "wear-it-all-luxury",
+    name: "Wear It All Luxury",
+    image: "/wear-it-all.png",
+    site: "https://wearitallluxury.vercel.app/",
+    github_site: "https://github.com/Festus-123/wearitallluxury",
+    github: "/github.jpg",
+    stacks: ["React", "Javascript", "Tailwind CSS", "Responsive UI", "sonner", "Supabase", "Brevo", "Render", "Zod"],
+    description:
+      "A modern website for a hotel, featuring a collection of room options and booking services. The site has a clean and intuitive design, making it easy for users to find and reserve their ideal stay."
+  }
 ];
