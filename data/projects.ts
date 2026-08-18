@@ -79,7 +79,7 @@ export const links: Project[] = [
   {
     slug: "wear-it-all-luxury",
     name: "Wear It All Luxury",
-    image: "/wear-it-all.png",
+    image: "/wear-it-all2.png",
     site: "https://wearitallluxury.vercel.app/",
     github_site: "https://github.com/Festus-123/wearitallluxury",
     github: "/github.jpg",
