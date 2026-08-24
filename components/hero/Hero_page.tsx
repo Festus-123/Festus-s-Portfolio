@@ -6,6 +6,7 @@ import { Changa_One } from "next/font/google";
 
 import About_Preview from "../about-preview/About_Preview";
 import Project_Preview from "../project-preview/Project_Preview";
+import TechCarousel3D from "../tech-stack/TechCarousel3D";
 
 export const changaOne = Changa_One({
   weight: "400",
@@ -100,12 +101,19 @@ const HeroPage = () => {
           <Project_Preview />
         </motion.div>
 
+        <motion.div className={`relative flex flex-col items-center gap-6 p-8 uppercase mt-20 ${changaOne.className}`}>
+          <motion.h1 className="text-[#49332a] font-style font-extrabold text-[clamp(2rem,6vw,5rem)]">
+            The tools behind the creative
+          </motion.h1>
+        <TechCarousel3D />
+        </motion.div>
+
         {/* We should work together */}
         <motion.div
           // style={{ y: contnetDescribeTranslateY }}
-          className={`p-4 md:p-8 relative`}
+          className={` relative bg-white mt-10`}
         >
-          <motion.h1 className="uppercase text-3xl md:text-5xl lg:text-7xl font-extrabold text-[#49332a] text-center leading-relaxed mb-20">
+          <motion.h1 className="uppercase text-[clamp(1rem,6vw,3rem)] font-extrabold text-white/80 text-center leading-relaxed w-max bg-black/90 p-2 md:p-4">
             {/* WANT TO BUILD A USER FRIENDLY WEBSITE LET&apos;S BUILD TOGEHTER!!! */}
             {/* WANT TO BUILD A RESPONSIVE USER FRIENDLY WEBSITE 👇👇 */}
             Want To Build A Responsive User Friendly Website 👇👇
