@@ -58,7 +58,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
       <div className="flex flex-col bg-gray-50/90">
       <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-20 lg:gap-30 p-2 md:p-8 lg:p-12">
         <h1
-          className={`text-[4em] md:text-[7em] lg:text-[9em] font-extrabold text-[#49332a] md:leading-40 ${changaOne.className}`}
+          className={`text-[clamp(6em,12vw,14em)] font-extrabold text-[#49332a] md:leading-40 ${changaOne.className}`}
         >
           GET <br /> IN <br /> TOUCH
         </h1>
@@ -68,7 +68,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
           className="relative w-full flex flex-col gap-5 p-2 border-amber-950"
         >
           {/* Email field */}
-          <div className="flex flex-col gap-5 p-2 text-amber-950 border-b-2 text-lg md:text-xl ">
+          <div className="flex flex-col gap-5 p-2 text-amber-950 border-b  text-lg md:text-xl ">
             <label htmlFor="Email">Your Email</label>
             <input
               id="Email"
@@ -80,7 +80,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
             />
           </div>
           {/* Name field */}
-          <div className="flex flex-col gap-5 p-2 text-amber-950 border-b-2 text-lg md:text-xl ">
+          <div className="flex flex-col gap-5 p-2 text-amber-950 border-b text-lg md:text-xl ">
             <label htmlFor="Email">Your Name</label>
             <input
               id="Email"
@@ -92,7 +92,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
             />
           </div>
           {/* Description field */}
-          <div className="flex flex-col gap-5 p-2 text-amber-950  border-b-2 text-lg md:text-xl ">
+          <div className="flex flex-col gap-5 p-2 text-amber-950  border-b text-lg md:text-xl ">
             <label htmlFor="Email">Your Offer</label>
             <textarea
               id="Email"
@@ -104,12 +104,18 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
           </div>
           <button 
             disabled={loading}
-            className="text-2xl md:text-4xl font-semibold italic border-2 border-amber-950 rounded-full p-2 md:p-3 absolute bottom-5 right-5 cursor-pointer">
+            type="submit"
+            className="text-2xl md:text-4xl font-semibold italic border border-amber-950 rounded-full p-2 md:p-3 absolute bottom-5 right-5 cursor-pointer">
             <FiSend />
           </button>
         </form>
       </div>
-        <div className="w-full flex flex-row items-center justify-evenly text-2xl p-6 md:p-8">
+
+      {/* <h1 className="uppercase font-extrabold w-full text-[clamp(9rem,20vw,15rem)] text-center opacity-5 absolute z-40 bottom-0 tracking-widest">
+        festus
+      </h1> */}
+
+        <div className="w-full flex flex-row items-center justify-evenly text-2xl p-8">
           {contacts.map((item, index) => {
             const Icon = item.icon;
 

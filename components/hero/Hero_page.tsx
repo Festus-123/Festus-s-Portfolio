@@ -101,13 +101,6 @@ const HeroPage = () => {
           <Project_Preview />
         </motion.div>
 
-        <motion.div className={`relative flex flex-col items-center gap-6 p-8 uppercase mt-20 ${changaOne.className}`}>
-          <motion.h1 className="text-[#49332a] font-style font-extrabold text-[clamp(2rem,6vw,5rem)]">
-            The tools behind the creative
-          </motion.h1>
-        <TechCarousel3D />
-        </motion.div>
-
         {/* We should work together */}
         <motion.div
           // style={{ y: contnetDescribeTranslateY }}
