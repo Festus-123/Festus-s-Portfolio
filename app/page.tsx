@@ -2,7 +2,7 @@ import React from 'react'
 import { Metadata } from 'next';
 import Hero_page from '@/components/hero/Hero_page'
 // import Sidebar from '@/components/sidebar/Sidebar'
-import WorkspaceScene from '@/components/3d/scenes/WorkspaceScene';
+// import WorkspaceScene from '@/components/3d/scenes/WorkspaceScene';
 
 export const metadata: Metadata = {
   title: "Festus Phillip Adebola https://festus-s-portfolio.vercel.app",
