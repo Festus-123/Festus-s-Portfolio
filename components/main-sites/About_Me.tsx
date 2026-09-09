@@ -9,7 +9,6 @@ import { Changa_One } from "next/font/google";
 // import { FiTarget } from "react-icons/fi";
 // import Stories from "../stories/Stories";
 
-
 export const changaOne = Changa_One({
   weight: "400",
   subsets: ["latin"],
@@ -34,8 +33,12 @@ const About_Me = () => {
         style={{ opacity: translateTitleOpacity }}
         className="z-10 sticky top-5 w-full flex flex-col md:flex-row items-center gap-10 p-8 md:p-16"
       >
-        <div className={`flex flex-col items-center md:items-start text-[#49332a]`}>
-          <h1 className={`text-[2em] md:text-[6em] font-extrabold text-center ${changaOne.className}`}>
+        <div
+          className={`flex flex-col items-center md:items-start text-[#49332a]`}
+        >
+          <h1
+            className={`text-[2em] md:text-[6em] font-extrabold text-center ${changaOne.className}`}
+          >
             FESTUS PHILLIP A.
           </h1>
           <p className=" text-lg md:text-xl font-medium flex flex-col items-center md:items-start">
@@ -62,16 +65,15 @@ const About_Me = () => {
             <span className="font-medium text-amber-950">
               Hi👋, I’m Festus,{" "}
             </span>
-            a 300 level Computer Science student at OAUSTECH with a current
-            First Class CGPA of 4.61. I specialize in JavaScript technologies
-            like React, Next.js and React Native, using them to develop
-            responsive web applications, interactive interfaces, and practical
-            solutions to real-world problems. <br /> <br />
-            With over 5 years of experience, I’ve worked on a variety of
-            projects—from simple tools to more structured
-            applications—constantly refining my skills and attention to detail.
+            A Fullstack Developer. I specialize in
+            JavaScript technologies like React, Next.js and React Native, express, using
+            this tools to develop responsive web applications, interactive interfaces,
+            and practical solutions to real-world problems. <br /> <br />
+            With 5+ years experience, I’ve worked on a variety of
+            projects -— from simple tools to more structured
+            applications; —- constantly refining my skills and attention to detail.
             I enjoy turning ideas into working systems and continuously pushing
-            myself to grow as a developer.
+            myself to grow as an all round Software Engineer.
           </p>
           <div className="w-[90%] drop-shadow-xl bg-white p-4">
             <Image
@@ -86,7 +88,7 @@ const About_Me = () => {
         </div>
 
         <p className="font-light text-justify w-full lg::w-[50%] text-lg md:text-2xl leading-relaxed">
-          I&apos;m a passionate Frontend Developer and Computer Science student
+          I&apos;m a passionate Fullstack Developer and Computer Science student
           with a strong focus on building clean, functional, and user-friendly
           digital experiences. <br /> <br />
           <span className="flex flex-col gap-2 ">
@@ -105,10 +107,11 @@ const About_Me = () => {
         {/* Album */}
         {/* <div className="p-16"></div> */}
         <a
-          href="https://drive.google.com/file/d/1TVMUCl-87MpxEpfWkhQ_oLjU5XwdR_RY/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1TVMUCl-87MpxEpfWkhQ_oLjU5XwdR_RY/view?usp=sharing"
           target="_blank"
           rel="noopeener noreferrer"
-          className="font-extrabold text-2xl text-[#49332a] uppercase flex items-center gap-2 cursor-pointer ">
+          className="font-extrabold text-xl text-[#49332a] uppercase flex items-center gap-2 cursor-pointer "
+        >
           <span>View resume</span>
           <span className="text-4xl">
             {" "}

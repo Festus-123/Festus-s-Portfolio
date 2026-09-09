@@ -68,8 +68,8 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
           className="relative w-full flex flex-col gap-5 p-2 border-amber-950"
         >
           {/* Email field */}
-          <div className="flex flex-col gap-5 p-2 text-amber-950 border-b  text-lg md:text-xl ">
-            <label htmlFor="Email">Your Email</label>
+          <div className="flex flex-col gap-5 p-2 text-amber-950 border-b rounded-lg text-lg md:text-xl ">
+            <label htmlFor="Email">Your Email*</label>
             <input
               id="Email"
               placeholder="your-email@gmail.com"
@@ -80,8 +80,8 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
             />
           </div>
           {/* Name field */}
-          <div className="flex flex-col gap-5 p-2 text-amber-950 border-b text-lg md:text-xl ">
-            <label htmlFor="Email">Your Name</label>
+          <div className="flex flex-col gap-5 p-2 text-amber-950 border-b rounded-lg text-lg md:text-xl ">
+            <label htmlFor="Email">Your Name*</label>
             <input
               id="Email"
               placeholder="your name"
@@ -92,7 +92,7 @@ const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
             />
           </div>
           {/* Description field */}
-          <div className="flex flex-col gap-5 p-2 text-amber-950  border-b text-lg md:text-xl ">
+          <div className="flex flex-col gap-5 p-2 text-amber-950  border-b rounded-lg text-lg md:text-xl ">
             <label htmlFor="Email">Your Offer</label>
             <textarea
               id="Email"

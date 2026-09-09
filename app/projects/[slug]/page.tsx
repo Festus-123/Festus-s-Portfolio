@@ -10,8 +10,6 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const project = links.find((p) => p.slug === slug);
   const index = links.findIndex((p) => p.slug === slug);
 
-  console.log("project", project);
-
   if (!project) return notFound();
 
   const prev = links[index - 1];

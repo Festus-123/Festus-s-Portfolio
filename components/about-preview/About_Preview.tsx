@@ -17,14 +17,14 @@ const About_Preview = () => {
             <span className="font-medium text-amber-950">
               Hi, I&apos;m Festus,
             </span>{" "}
-            a 300 level Computer Science student at OAUSTECH with a current
-            First Class CGPA of 4.61. With over  years experience, I&apos;ve
-            been working as a software developer,
-            mainly focusing on JavaScript technologies to build websites, mobile
-            applications, and interactive simulations. <br /> <br />I have
-            worked on several projects ranging from simple password Generator
-            systems to responsive Enterprise web apps, reflecting my interest in
-            experimenting with ideas and turning them into working systems.
+            A Fullstack Developer. With over 5 years experience,, mainly
+            focusing on JavaScript technologies to build websites, mobile
+            applications, and interactive simulations. <br /> <br />I as well at
+            times leverage python technologies for heavy program lifting. Worked
+            on several projects ranging from simple password Generator systems
+            to responsive Enterprise web apps to complex data processing
+            frameworks, reflecting my interest in experimenting with ideas and
+            turning them into working systems.
           </p>
           <Link
             className="text-amber-950 font-bold flex items-center place-self-end gap-2 text-right text-xl md:text-3xl cursor-pointer"

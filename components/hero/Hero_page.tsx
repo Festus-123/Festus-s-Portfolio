@@ -6,7 +6,8 @@ import { Changa_One } from "next/font/google";
 
 import About_Preview from "../about-preview/About_Preview";
 import Project_Preview from "../project-preview/Project_Preview";
-import TechCarousel3D from "../tech-stack/TechCarousel3D";
+
+// import WorkspaceScene from "../3d/scenes/WorkspaceScene";
 
 export const changaOne = Changa_One({
   weight: "400",
@@ -78,7 +79,7 @@ const HeroPage = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            FRONTEND DEVELOPER
+            FULLSTACK DEVELOPER
           </motion.h2>
         </div>
 
@@ -100,6 +101,10 @@ const HeroPage = () => {
         <motion.div style={{}} className="relative mt-20">
           <Project_Preview />
         </motion.div>
+
+        {/* <div className="relative h-[80vh] w-full">
+        <WorkspaceScene />
+        </div> */}
 
         {/* We should work together */}
         <motion.div

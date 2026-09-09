@@ -32,7 +32,7 @@ const Sidebar = () => {
         { open && (
           <div className=" text-white">
             <h1 className="font-light text-center traking-wider">
-              FesCode
+              Festus
             </h1>
           </div>
         )}
